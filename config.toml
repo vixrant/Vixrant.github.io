@@ -1,4 +1,4 @@
-baseurl = "https://vixrant.gitlab.io/"
+baseurl = "http://www.vikrant.ga/"
 title = "Vixrant"
 
 theme = "coder"
