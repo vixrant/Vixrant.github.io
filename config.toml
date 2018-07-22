@@ -25,7 +25,7 @@ pygmentscodefencesguesssyntax = true
     hideCredits = true
     hideCopyright = true
 
-    googleAnalytics = "UA-117154240"
+    googleAnalytics = "UA-117154240-1"
 
 
     # Custom CSS
