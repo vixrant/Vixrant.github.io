@@ -20,7 +20,7 @@ pygmentscodefencesguesssyntax = true
     keywords = "blog,developer,personal"
     info = "Full Stack Developer"
     avatarurl = "images/avatar.jpg"
-    footercontent = "july-21-2018: New website up! Now hosted on gitlab."
+    footercontent = ""
 
     hideCredits = true
     hideCopyright = true
