@@ -1,4 +1,4 @@
-baseurl = "http://www.vikrant.ga/"
+baseurl = "https://www.vikrant.ga/"
 title = "Vixrant"
 
 theme = "coder"
@@ -22,7 +22,7 @@ googleAnalytics = "UA-117154240-1"
     keywords = "blog,developer,personal"
     info = "Full Stack Developer"
     avatarurl = "images/avatar.jpg"
-    footercontent = "july-21-2018: New website up! Now hosted on gitlab."
+    footercontent = ""
 
     hideCredits = true
     hideCopyright = true
@@ -43,7 +43,7 @@ googleAnalytics = "UA-117154240-1"
 [[params.social]]
     name = "Gitlab"
     weight = 2
-    url = "https://github.com/vixrant/"
+    url = "https://gitlab.com/vixrant/"
 [[params.social]]
     name = "Twitter"
     weight = 3
@@ -51,7 +51,15 @@ googleAnalytics = "UA-117154240-1"
 [[params.social]]
     name = "LinkedIn"
     weight = 4
-    url = "https://www.linkedin.com/in/johndoe/"
+    url = "https://linkedin.com/in/johndoe/"
+[[params.social]]
+    name = "Facebook"
+    weight = 5
+    url = "https://Facebook.com/vixrant/"
+[[params.social]]
+    name = "Instagram"
+    weight = 6
+    url = "https://Instagram.com/vikrantgajria/"
 
 [[menu.main]]
     name = "Résumé"
