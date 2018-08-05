@@ -66,10 +66,14 @@ googleAnalytics = "UA-117154240-1"
     weight = 1
     url = "https://goo.gl/8YszZv"
 [[menu.main]]
-    name = "Blog"
+    name = "Resources"
     weight = 2
+    url = "https://college.vikrant.ga/"
+[[menu.main]]
+    name = "Blog"
+    weight = 3
     url  = "/posts/"
 [[menu.main]]
     name = "About"
-    weight = 3
+    weight = 4
     url = "/about/"
