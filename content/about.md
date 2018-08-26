@@ -7,20 +7,5 @@ I'm a second year student in Dwarkadas J. Sanghvi College of Engineering - Vile 
 
 I participate in programming competitions, workshops, and hackathons around Mumbai. I love teaching others and reading through their programs/ projects. If you spot me anywhere, feel free to talk to me! Other than software development, I love reading and striking strings on my guitar trying to produce melodious sounds.
 
-# Skills 
-
- - HTML5, CSS3, JS ES8
- - Responsive web design (Mobile First)
- - CSS Preprocessors (Sass/Scss, Less) & GulpJS
- - CSS Frameworks (Bootstrap, Semantic UI)
- - NodeJS
- - ExpressJS, ElectronJS
- - VueJS
- - Django & DRF, Flask
- - Postgresql, SQLite3
- - MongoDB, Redis
- - Cloud services (GCP, AWS, Firebase, Heroku)
- - Java 8 (Android, Desktop)
- - C, C++, C#, Lua, Dart
- - Python
- - Git
+-----
+You can checkout my Résumé [here](https://goo.gl/8YszZv)!
