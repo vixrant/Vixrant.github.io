@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vixrant</title>
+    <link>https://www.vikrant.ga/</link>
+    <description>Recent content on Vixrant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://www.vikrant.ga/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Vikrant</title>
+      <link>https://www.vikrant.ga/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.vikrant.ga/about/</guid>
+      <description>I&amp;rsquo;m a second year student in Dwarkadas J. Sanghvi College of Engineering - Vile Parle, majoring in Computer Engineering. I have keen interest in all fields of software development, presently specializing in full stack development. I have 9 years of programming experience, on and off since 3rd grade.
+I participate in programming competitions, workshops, and hackathons around Mumbai. I love teaching others and reading through their programs/ projects. If you spot me anywhere, feel free to talk to me!</description>
+    </item>
+    
+  </channel>
+</rss>
