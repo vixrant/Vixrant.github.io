@@ -13,7 +13,7 @@ And to my surprise, I bagged the 4th position out of 55. I was shocked when they
 
 I connected with the very helpful and efficient organising committee and the admirable judges of the hackathon. When I was feeling all alone, the organisers would come and talk to me. They would smile and readily offer all possible assisstance. Even the judges of round 1 were quite helpful and curious about my project and how I managed to build it. It was a fantastic experience altogether.
 
-Now, about the part where I went alone. I've always teamed up with some amazing people from my college, but I decided to go alone for this hackathon due to a few reasons. This decision taught me a lot yesterday. Here's a sum and substance of what I learned:
+Now, about the part where I went alone. I've always teamed up with some amazing people from my college. This decision taught me a lot yesterday. Here's a sum and substance of what I learned:
 
 ##### 1. Organisation
 
@@ -35,7 +35,7 @@ Throughout the hackathon, I tried to keep a positive attitude. I was tagged as a
 
 If you feel like you can go to a hackathon alone, go for it. Try it out. It'll enlighten you about what you're capable of.
 
-I'll definitely remember to apply what I learned here at my next hackathon, where I'll surely go with a fantastic team.
+I'll definitely remember to apply what I learned here at my next hackathon.
 
 ♡
 
