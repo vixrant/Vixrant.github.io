@@ -21,7 +21,7 @@ googleAnalytics = "UA-117154240-1"
     description = "An orgnaism which converts coffee into computer understandable language."
     keywords = "blog,developer,personal"
     info = "Full Stack Developer"
-    avatarurl = "images/avatar.jpg"
+    avatarurl = "images/avatar.png"
     footercontent = ""
 
     hideCredits = true
@@ -65,10 +65,10 @@ googleAnalytics = "UA-117154240-1"
     name = "Résumé"
     weight = 1
     url = "https://goo.gl/8YszZv"
-[[menu.main]]
-    name = "Resources"
-    weight = 2
-    url = "https://college.vikrant.ga/"
+# [[menu.main]]
+#     name = "Resources"
+#     weight = 2
+#     url = "https://college.vikrant.ga/"
 [[menu.main]]
     name = "Blog"
     weight = 3

@@ -41,7 +41,7 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     info = "Full Stack DevOps and Magician" # Author's job title or info.
     description = "John Doe's personal website" # Site description.
     keywords = "blog,developer,personal" # Site keywords.
-    avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
+    avatarurl = "images/avatar.png" # Contain the path of the optionnal avatar in the static folder.
 
     footercontent = "Enter a text here." # Add footer content
 
