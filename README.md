@@ -7,11 +7,12 @@
 <br>
 <br>
 <br>
-<br>
-
-#### Easy Deploy
 
 [![Deploy Frontend to Netlify][Netlify-deploy-button]][Netlify-deploy-link]
+
+### About
+
+The website is currently built on Hugo using a [Coder](https://themes.gohugo.io/hugo-coder-portfolio/) theme, with small customisations.
 
 ---
 
