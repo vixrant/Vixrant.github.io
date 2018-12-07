@@ -14,8 +14,6 @@ pygmentscodefencesguesssyntax = true
 
 googleAnalytics = "UA-117154240-1"
 
-# disqusShortname = "yourdiscussshortname"
-
 [params]
     author = "Vikrant Gajria"
     description = "An orgnaism which converts coffee into computer understandable language."
@@ -26,8 +24,6 @@ googleAnalytics = "UA-117154240-1"
 
     hideCredits = true
     hideCopyright = true
-
-    # googleAnalytics = "UA-117154240-1"
 
 
     # Custom CSS

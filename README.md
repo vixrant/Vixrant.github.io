@@ -1,6 +1,21 @@
-[Vikrant.ga](https://www.vikrant.ga)
+<br>
+<br>
+<br>
+<div style="text-align: center;">
+    <h1>🎸 <a href="https://www.vikrant.ga">
+        Vikrant.ga
+    </a></h1>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+#### Easy Deploy
 
 [![Deploy Frontend to Netlify][Netlify-deploy-button]][Netlify-deploy-link]
+
+---
 
 ### License
 
