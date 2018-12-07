@@ -1,11 +1,9 @@
 <br>
-<br>
-<br>
-<div style="text-align: center;">
-    <h1>🎸 <a href="https://www.vikrant.ga">
-        Vikrant.ga
+<p>
+    <h1 align="center"><a href="https://www.vikrant.ga">
+        ❦ Vikrant.ga
     </a></h1>
-</div>
+</p>
 <br>
 <br>
 <br>
