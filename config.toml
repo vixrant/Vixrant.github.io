@@ -1,5 +1,5 @@
 baseurl = "https://www.vikrant.ga/"
-title = "Vixrant"
+title = "+ Vixrant"
 
 theme = "coder"
 
@@ -47,7 +47,7 @@ googleAnalytics = "UA-117154240-1"
 [[params.social]]
     name = "LinkedIn"
     weight = 4
-    url = "https://linkedin.com/in/johndoe/"
+    url = "https://linkedin.com/in/vikrantgajria/"
 [[params.social]]
     name = "Facebook"
     weight = 5
@@ -61,10 +61,6 @@ googleAnalytics = "UA-117154240-1"
     name = "Résumé"
     weight = 1
     url = "https://goo.gl/8YszZv"
-# [[menu.main]]
-#     name = "Resources"
-#     weight = 2
-#     url = "https://college.vikrant.ga/"
 [[menu.main]]
     name = "Blog"
     weight = 3
