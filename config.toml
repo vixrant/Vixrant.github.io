@@ -48,14 +48,6 @@ googleAnalytics = "UA-117154240-1"
     name = "LinkedIn"
     weight = 4
     url = "https://linkedin.com/in/vikrantgajria/"
-[[params.social]]
-    name = "Facebook"
-    weight = 5
-    url = "https://Facebook.com/vixrant/"
-[[params.social]]
-    name = "Instagram"
-    weight = 6
-    url = "https://Instagram.com/vikrantgajria/"
 
 [[menu.main]]
     name = "Résumé"
