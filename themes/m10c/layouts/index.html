@@ -1,0 +1,6 @@
+{{ define "main" }}
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; height: -webkit-fill-available; padding: -2.5rem;">
+    <img src="{{ "images/cat.png" | relURL }}" style="max-width: 20vw; height: auto;">
+    {{ .Content }}
+</div>
+{{ end }}

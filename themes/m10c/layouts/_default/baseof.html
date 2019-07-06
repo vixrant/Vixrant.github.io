@@ -3,7 +3,6 @@
   <head>
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
     <meta charset="utf-8" />
-    {{ hugo.Generator }}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="{{ .Site.Params.author | default "John Doe" }}" />
     <meta name="keywords" content="{{ .Site.Params.keywords }}" />
@@ -17,15 +16,15 @@
 
   </head>
   <body>
-    {{ block "body" . }}
-    <header class="app-header">
-      {{ partial "header-content" . }}
-    </header>
-    <main class="app-container">
-      {{ block "main" . }}
-        {{ .Content }}
-      {{ end }}
-    </main>
+  {{ block "body" . }}
+  <header class="app-header">
+    {{ partial "header-content" . }}
+  </header>
+  <main class="app-container">
+    {{ block "main" . }}
+      {{ .Content }}
     {{ end }}
+  </main>
+  {{ end }}
   </body>
 </html>
