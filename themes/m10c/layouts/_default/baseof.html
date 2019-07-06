@@ -16,7 +16,7 @@
 
   </head>
   <body>
-    {{ block "body" . }}
+  {{ block "body" . }}
     <header class="app-header">
       {{ partial "header-content" . }}
     </header>
@@ -25,6 +25,6 @@
         {{ .Content }}
       {{ end }}
     </main>
-    {{ end }}
+  {{ end }}
   </body>
 </html>
