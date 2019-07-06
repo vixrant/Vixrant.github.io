@@ -1,16 +1,12 @@
 baseurl = "https://www.vikrantgajria.me/"
-title = "+ Vixrant"
+title = "Vixrant"
 
-theme = "coder"
+theme = "m10c"
 
 languagecode = "en"
 
 paginate = 20
 canonifyurls = true
-
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
 
 googleAnalytics = "UA-117154240-1"
 
@@ -19,45 +15,34 @@ googleAnalytics = "UA-117154240-1"
     description = "An orgnaism which converts coffee into computer understandable language."
     keywords = "blog,developer,personal"
     info = "Full Stack Developer"
-    avatarurl = "images/avatar.png"
-    footercontent = ""
+    avatar = "images/avatar.png"
 
-    hideCredits = true
-    hideCopyright = true
-
-
-    # Custom CSS
-    custom_css = []
-
-    # RTL support
-    rtl = false
+[params.style]
+    darkestColor = "#dcdde1" # Sidebar color
+    darkColor = "#ffffff" # Background
+    primaryColor = "#e84118" # Text and accents
+    lightColor = "#111" # Font
+    lightestColor = "#000" # Headers
 
 [[params.social]]
-    name = "Github"
-    weight = 1
+    name = "github"
     url = "https://github.com/vixrant/"
 [[params.social]]
-    name = "Gitlab"
-    weight = 2
+    name = "gitlab"
     url = "https://gitlab.com/vixrant/"
 [[params.social]]
-    name = "Twitter"
-    weight = 3
+    name = "twitter"
     url = "https://twitter.com/vixrant/"
 [[params.social]]
-    name = "LinkedIn"
-    weight = 4
+    name = "linkedin"
     url = "https://linkedin.com/in/vikrantgajria/"
 
 [[menu.main]]
     name = "Résumé"
-    weight = 1
     url = "https://goo.gl/8YszZv"
 [[menu.main]]
     name = "Blog"
-    weight = 3
     url  = "/posts/"
 [[menu.main]]
     name = "About"
-    weight = 4
     url = "/about/"
