@@ -1,6 +1,6 @@
 +++
-title = "About"
-slug = "about"
+title = "Test"
+slug = "test"
 +++
 
 I'm a sophomore in Dwarkadas J. Sanghvi College of Engineering - Vile Parle, majoring in Computer Engineering. I have keen interest in all fields of software development, currently specializing in full stack development. I have 9 years of programming experience, on and off since 3rd grade.

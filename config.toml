@@ -12,17 +12,15 @@ googleAnalytics = "UA-117154240-1"
 
 [params]
     author = "Vikrant Gajria"
-    description = "An orgnaism which converts coffee into computer understandable language."
-    keywords = "blog,developer,personal"
-    info = "Full Stack Developer"
-    avatar = "images/avatar.png"
+    description = "An organism that converts coffee into computer language."
+    avatar = "images/avatar.jpg"
 
 [params.style]
-    darkestColor = "#dcdde1" # Sidebar color
-    darkColor = "#ffffff" # Background
-    primaryColor = "#e84118" # Text and accents
-    lightColor = "#111" # Font
-    lightestColor = "#000" # Headers
+    primaryColor = "#e056fd" # Text and accents
+    # darkestColor = "#b7e8f7" # Sidebar color
+    # darkColor = "#ffffff" # Background
+    # lightColor = "#111" # Font
+    # lightestColor = "#000" # Headers
 
 [[params.social]]
     name = "github"

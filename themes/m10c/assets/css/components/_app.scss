@@ -24,6 +24,21 @@
   }
 }
 
+.app-header-menu {
+  display: flex;
+  width: 100%;
+  max-height: 25vh;
+  margin-top: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
 @media (min-width: 940px) {
   .app-header {
     position: fixed;
@@ -36,5 +51,13 @@
   .app-container {
     max-width: 65rem;
     margin-left: 20rem;
+  }
+
+  .app-header-menu {
+    flex-direction: column;
+
+    a {
+      margin-top: 1rem;
+    }
   }
 }

@@ -1,6 +1,6 @@
 $darkest-color: {{ .Site.Params.style.darkestColor | default "#242930" }};
 $dark-color: {{ .Site.Params.style.darkColor | default "#353b43" }};
-$light-color: {{ .Site.Params.style.lightColor | default "#afbac4" }};
+$light-color: {{ .Site.Params.style.lightColor | default "#bfcad4" }};
 $lightest-color: {{ .Site.Params.style.lightestColor | default "#ffffff" }};
 $primary-color: {{ .Site.Params.style.primaryColor | default "#57cc8a" }};
 
