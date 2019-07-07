@@ -20,8 +20,8 @@ googleAnalytics = "UA-117154240-1"
 
 [params.style]
     primaryColor = "#e056fd" # Text and accents
-    # darkestColor = "#b7e8f7" # Sidebar color
-    # darkColor = "#ffffff" # Background
+    darkestColor = "#130f40" # Sidebar color
+    darkColor = "#30336b" # Background
     # lightColor = "#111" # Font
     # lightestColor = "#000" # Headers
 
