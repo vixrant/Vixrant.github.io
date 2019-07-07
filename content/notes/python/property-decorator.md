@@ -1,6 +1,6 @@
 ---
 title: '@property decorator in Python'
-tags: ['python', 'fp']
+tags: [python, fp]
 ---
 
 You may remember this from Java:
