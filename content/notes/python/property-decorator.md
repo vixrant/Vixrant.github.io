@@ -1,5 +1,5 @@
 ---
-title: '@property decorator in Python'
+title: 'The @property decorator'
 tags: [python, fp]
 ---
 
