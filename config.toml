@@ -9,6 +9,7 @@ paginate = 20
 canonifyurls = true
 pygmentsCodeFences = true
 
+disqusShortname = "vikrantgajria"
 googleAnalytics = "UA-117154240-1"
 
 [params]
