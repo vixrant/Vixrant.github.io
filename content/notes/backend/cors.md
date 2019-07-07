@@ -1,6 +1,6 @@
 ---
 title: Cross-Origin Resource Sharing (CORS)
-tags: [backend, wip]
+tags: [backend, wip, javascript, django]
 ---
 
 This is really important because during a hackathon, I was running an ExpressJS server as one process and a React application as another process. Now since my ExpressJS server was used for REST API, I wasn't able to get any HTTP response back since CORS was denied!

@@ -15,6 +15,7 @@ googleAnalytics = "UA-117154240-1"
     author = "Vikrant Gajria"
     description = "An organism that converts coffee into computer language."
     avatar = "images/avatar.jpg"
+    keywords = ["portfolio", "blog", "vikrant", "djsce", "gajria", "engineer", "software", "programmer"]
 
 [params.style]
     primaryColor = "#e056fd" # Text and accents
