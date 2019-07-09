@@ -1,8 +1,8 @@
-+++ 
-draft = true
-date = {{ .Date }}
-title = ""
-slug = "" 
-tags = []
-categories = []
-+++
+---
+draft: true
+date: {{ .Date }}
+title: ""
+slug: "" 
+tags: []
+categories: []
+---
