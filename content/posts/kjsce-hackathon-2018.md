@@ -1,10 +1,12 @@
 ---
-author: "Vikrant Gajria"
+author: Vikrant Gajria
 date: 2018-10-07
-title: My Expereince of Cracking a Hackathon Alone
-tags: ['hackathon', 'javascript']
----
+title: My Experience of Cracking a Hackathon Alone
+tags:
+- hackathon
+- javascript
 
+---
 I went to KJSCE Hackathon on 5th-6th October, 2018. As a sophomore it's crazy to think about going to a hackathon all alone competing against 55 teams of junior or senior year students with more experience. But I wanted to try my hand at it anyway, allured by the fact that it was sponsored and recognised by some of the big companies in the industry.
 
 I was the only person who appeared alone, that too as a sophomore. I was scared. People were planning together, discussing the best APIs or libraries, figuring out ways to add a "WOW" factor to their project, and debating on how to pitch their final work. And I was there with my headphones on, ready to give my best with what I know.
