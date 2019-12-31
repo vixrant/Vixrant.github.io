@@ -1,0 +1,21 @@
+<nav class="navbar app-padding">
+  <span class="nav-title">
+    <a href="/">
+      🧶
+    </a>
+  </span>
+  <section class="nav-links">
+    <a href="/#about">
+      About
+    </a>
+    <!-- <a href="{{ if .IsHome }}/#projects{{ else }}/projects{{ end }}">
+      Projects
+    </a> -->
+    <a href="{{ if .IsHome }}/#blog{{ else }}/posts{{ end }}">
+      Blog
+    </a>
+    <a href="{{ if .IsHome }}/#notes{{ else }}/notes{{ end }}">
+      Notes
+    </a>
+  </section>
+</nav>

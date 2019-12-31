@@ -1,7 +1,7 @@
 baseurl = "https://www.vikrantgajria.me/"
 title = "Vixrant"
 
-theme = "m10c"
+theme = "personal-theme"
 
 languagecode = "en"
 
@@ -14,7 +14,7 @@ googleAnalytics = "UA-117154240-1"
 [params]
     author = "Vikrant Gajria"
     description = "An organism that converts coffee into computer language."
-    avatar = "images/avatar.jpg"
+    avatar = "images/avataaars.svg"
     keywords = ["portfolio", "blog", "vikrant", "djsce", "gajria", "engineer", "software", "programmer"]
 
 [params.style]

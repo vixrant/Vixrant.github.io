@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <article class="content">
+    <header>
+      <h2><b>{{ .Title }}</b></h2>
+      {{- with .Params.tags -}}
+        <div class="tags">
+          {{ range . -}}
+            {{- with $.Site.GetPage (printf "/%s/%s" "tags" . ) -}}
+              <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{- end -}}
+          {{- end -}}
+        </div>
+      {{- end -}}
+      <h6>{{ .PublishDate.Format "Jan 2, 2006" }}, {{ .ReadingTime }} mins read</h6>
+    </header>
+    
+    <p>
+      {{ .Content }}
+    </p>
+  </article>
+{{ end }}

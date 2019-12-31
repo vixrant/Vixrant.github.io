@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<section id="about" class="container">
+  <div class="row">
+    <div class="four columns">
+      <img src="/images/avataaars.svg" id="profile-img" class="img-responsive">
+    </div>
+    <div class="eight columns">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+<!-- <section id="info" class="container list-articles">
+  <div class="row section-heading">
+    <h4>Portfolio</h4>
+  </div>
+</section> -->
+
+<!-- {{ partial "home/projects.html" . }} -->
+{{ partial "home/blog.html" . }}
+{{ partial "home/notes.html" . }}
+
+{{ end }}

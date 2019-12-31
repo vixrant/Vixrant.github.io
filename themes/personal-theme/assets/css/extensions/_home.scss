@@ -1,0 +1,13 @@
+#profile-img {
+  height: auto;
+  max-height: 25vh;
+
+  @media (#{$bp-larger-than-mobile}) {
+    max-height: 100vh;
+  }
+}
+
+#projects article {
+  font-size: 1.8rem;
+  font-weight: 500;
+}

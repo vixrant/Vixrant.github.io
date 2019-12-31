@@ -1,0 +1,25 @@
+// Colors
+$light-grey: #6C7A89 !default;
+$dark-grey: #434A54 !default;
+$blue: #044F67 !default;
+$red: #ED5565 !default;
+$yellow: #CA6924 !default;
+
+$border-color: #bbb !default;
+$link-color: $light-grey !default;
+$font-color: #222 !default;
+
+.full-blue {
+  color: $blue;
+  background-color: rgba($color: $blue, $alpha: .3);
+}
+
+.full-red {
+  color: $red;
+  background-color: rgba($color: $red, $alpha: .3);
+}
+
+.full-yellow {
+  color: $yellow;
+  background-color: rgba($color: $yellow, $alpha: .3);
+}

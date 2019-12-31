@@ -1,0 +1,17 @@
+name = "personal-theme"
+license = "MIT"
+# licenselink = "https://github.com/vaga/hugo-theme-m10c/blob/master/LICENSE.md"
+description = "A theme built for github.com/vixrant's personal website"
+homepage = "https://github.com/vixrant/personal-website"
+tags = ["blog", "minimalistic", "minimal", "responsive"]
+features = [
+  "minimalistic blog",
+  "social icons",
+  "editable colors"
+]
+min_version = 0.55
+
+[author]
+  name = "vixrant"
+  homepage = "https://vikrantgajria.me"
+

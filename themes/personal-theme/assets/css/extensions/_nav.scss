@@ -1,0 +1,24 @@
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+
+  .nav-title {
+    font-weight: bolder;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+
+    @media (#{$bp-larger-than-desktop}) {
+      width: 50% !important;
+    }
+  }
+}

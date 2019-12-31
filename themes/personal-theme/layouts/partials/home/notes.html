@@ -1,0 +1,16 @@
+<section id="notes" class="container list-articles">
+  <div class="row section-heading">
+    <h4>Recent Notes</h4>
+    <a href="/notes">
+      <button class="full-yellow">View All</button>
+    </a>
+  </div>
+
+  <div class="row">
+    {{ range first 5 (where .Site.RegularPages "Section" "notes") }}
+      <article>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </article>
+    {{ end }}
+  </div>
+</section>
