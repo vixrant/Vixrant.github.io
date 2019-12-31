@@ -1,0 +1,7 @@
+<footer class="container footer" style="margin: 1rem;">
+  {{ range .Site.Params.Social }}
+    <a href="{{ .url }}">
+      <b>{{ .name }}</b>
+    </a>
+  {{ end }}
+</footer>
