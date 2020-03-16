@@ -3,7 +3,7 @@
 <section id="about" class="container">
   <div class="row">
     <div class="four columns">
-      <img src="/images/avataaars.svg" id="profile-img" class="img-responsive">
+      <img src="{{ .Site.Params.avatar }}" id="profile-img" class="img-responsive">
     </div>
     <div class="eight columns">
       {{ .Content }}
@@ -19,6 +19,6 @@
 
 <!-- {{ partial "home/projects.html" . }} -->
 {{ partial "home/blog.html" . }}
-{{ partial "home/notes.html" . }}
+<!-- {{ partial "home/notes.html" . }} -->
 
 {{ end }}

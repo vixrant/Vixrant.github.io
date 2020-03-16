@@ -1,6 +1,8 @@
 ---
 title: Date and Time in Java
-tags: [java]
+date: 2018-09-01
+tags:
+- java
 ---
 
 ## `Date` class

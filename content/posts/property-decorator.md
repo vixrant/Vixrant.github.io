@@ -1,6 +1,9 @@
 ---
-title: 'The @property decorator'
-tags: [python, fp]
+title: The @property decorator
+date: 2018-09-01
+tags: 
+- python
+- fp
 ---
 
 You may remember this from Java:

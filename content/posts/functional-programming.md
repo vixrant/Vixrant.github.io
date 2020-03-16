@@ -1,6 +1,9 @@
 ---
 title: Functional Programming in Java
-tags: [java, fp]
+date: 2018-09-01
+tags: 
+- java
+- fp
 ---
 
 Functional programming is my favourite aspect of some languages such as JavaScript. You can do the same work in a more expressive way. For example if we want to multiply all terms in an array by 2, there are two ways to go about it in JavaScript.

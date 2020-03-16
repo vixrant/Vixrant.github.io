@@ -2,6 +2,16 @@
   height: auto;
   max-height: 25vh;
 
+  border-radius: 50%;
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.003),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.004),
+    0 12.5px 10px rgba(0, 0, 0, 0.005),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.006),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.007),
+    0 100px 80px rgba(0, 0, 0, 0.01)
+  ;
+
   @media (#{$bp-larger-than-mobile}) {
     max-height: 100vh;
   }

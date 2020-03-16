@@ -1,7 +1,6 @@
 ---
-author: Vikrant Gajria
-date: 2018-10-07
 title: My Experience of Cracking a Hackathon Alone
+date: 2018-10-07
 tags:
 - hackathon
 - javascript

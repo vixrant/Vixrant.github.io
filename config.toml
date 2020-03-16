@@ -14,7 +14,7 @@ googleAnalytics = "UA-117154240-1"
 [params]
     author = "Vikrant Gajria"
     description = "An organism that converts coffee into computer language."
-    avatar = "images/avataaars.svg"
+    avatar = "images/face.jpg"
     keywords = ["portfolio", "blog", "vikrant", "djsce", "gajria", "engineer", "software", "programmer"]
 
 [params.style]
