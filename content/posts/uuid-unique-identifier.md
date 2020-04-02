@@ -1,8 +1,9 @@
 ---
 title: UUID in Java
-date: 2018-09-01
-tags: 
-- java
+date: 2018-09-01T00:00:00.000Z
+draft: true
+tags:
+  - java
 ---
 
 [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) is a widely used implementation for unique identifiers. Java's implementation `java.util.UUID` is pretty good. You may easily use it for most cases.
