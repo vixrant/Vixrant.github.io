@@ -1,7 +1,7 @@
 <br>
 <p>
-    <h1 align="center"><a href="https://www.vikrant.ga">
-        ❦ Vikrant.ga
+    <h1 align="center"><a href="https://www.vikrantgajria.me">
+        ❦ Vikrantgajria.me
     </a></h1>
 </p>
 <br>
