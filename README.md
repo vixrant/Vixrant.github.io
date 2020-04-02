@@ -12,7 +12,7 @@
 
 ### About
 
-The website is currently built on Hugo using a [Coder](https://themes.gohugo.io/hugo-coder-portfolio/) theme, with small customisations.
+The website is currently built on Hugo using a custom theme.
 
 ---
 
