@@ -1,0 +1,24 @@
+{{ $posts := (where .Site.RegularPages "Section" "posts") }}
+
+
+<section class="green">
+  <h2 class="heading">Blog</h2>
+  
+  <div class="row justify-content-md-center">
+    
+    {{ range first 2 $posts }}
+
+    <div class="col-lg-5 col-12 mb-3">
+      {{ partial "postcard" . }}
+    </div>
+
+    {{ end }}
+
+    <div class="col-lg-2 col-12 align-items-end d-flex align-items-center">
+      <a href="/posts" class="btn btn-dark-faded rounded-circle p-4 text-center">
+        <img src="{{.Site.BaseURL}}assets/next.svg" alt="Go to posts" width="40px">
+      </a>
+    </div>
+
+  </div>
+</section>

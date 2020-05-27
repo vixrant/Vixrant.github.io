@@ -1,0 +1,19 @@
+<div class="card p-4">
+  <a class="mb-3" href="{{ .Permalink }}">
+    <div class="featuredImage rounded"
+        style="background-size:cover;background-position:center;background-image: url('https://demo.uicard.io/hugo-uilite-portfolio-demo/images/blog/image2.jpg'); height: 200px;background-color:#fbfbfb;"
+      >
+    </div>
+  </a>
+  <small class="text-muted">{{ .Date.Format "January 2, 2006" }}</small>
+
+  <a href="{{ .Permalink }}">
+    <h3 class="h4 font-weight-bold text-dark">{{ .Title }}</h3>
+  </a>
+  
+  <div>
+      {{ range .Params.tags }}
+        <span class="badge badge-light">{{ . }}</span>
+      {{ end }}
+  </div>
+</div>

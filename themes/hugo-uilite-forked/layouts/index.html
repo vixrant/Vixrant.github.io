@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+{{ partial "sidebar.html" . }}
+
+<div class="main-content">
+	{{ if gt (len (where .Data.Pages "Type" "posts")) 0 }}{{ partial "blog.html" . }}{{ end }}
+	{{ if .Site.Data.experience }}{{ partial "experience.html" . }}{{ end }}
+	{{ if .Site.Data.skills }}{{ partial "skills.html" . }}{{ end }}
+</div>
+
+<div style="z-index: 4; position: relative;">
+	{{ if .Site.Data.projects }}{{ partial "projects.html" . }}{{ end }}
+	{{ if gt (len (where .Data.Pages "Type" "work")) 0 }}{{ partial "work.html" . }}{{ end }}
+</div>
+
+<div class="main-content">
+	{{ partial "contact.html" . }}		
+</div>
+
+{{ partial "footer-scripts.html" . }}

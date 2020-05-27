@@ -1,0 +1,22 @@
+{
+	"title" : "Experience",
+	"experience" : [
+		{
+			"timeperiod" : "3 March 2020 - Present",
+			"company" : "Research & Development Intern",
+			"website": "https://www.csre.iitb.ac.in",
+			"description" : "Working on C++ and ARM-based systems - STM32 (NDA)"
+		},
+		{
+			"timeperiod" : "30 May 2019 - 31 July 2019",
+			"company" : "Lido Learning",
+			"website": "https://www.lidolearning.com",
+			"description" : "Built React component library and various dashboards for company staff and serverless functions for SMS notifications. Designed streaming-data pipelines using AWS Kinesis with persistent backups in Postgres. Worked with Hasura GraphQL, Postgres, React, Typescript, NodeJS."
+		},
+		{
+			"timeperiod" : "25 June 2018 - 3 August 2018",
+			"company" : "Checkapp Healthcare Technologies",
+			"description" : "Developed a chatbot for automatic patient prescription generation through doctor voice inputs"
+		}
+	]
+}

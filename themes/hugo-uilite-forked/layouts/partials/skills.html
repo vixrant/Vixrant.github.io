@@ -1,0 +1,14 @@
+{{ $skills := .Site.Data.skills }}
+
+<section id="skills" class="orange">
+  <h2 class="heading">{{ $skills.title }}</h2>
+
+  {{ range $category, $list := $skills.skills }}
+
+  <div class="skill">
+    <div class="h3">{{ $category }}</div>
+    <div class="h6">{{ delimit $list ", " }}</div>
+  </div>
+
+  {{ end }}
+</section>

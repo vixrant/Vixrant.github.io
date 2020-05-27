@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+
+<section>
+  <a href="/posts" class="text-dark">
+    <i class="fas fa-arrow-left"></i>
+  </a>
+
+  <div class="text-center my-4">
+    <h1>{{ .Title }}</h1>
+    <span class="text-muted">{{ .Date.Format "2 January, 2006" }}</span>
+  </div>
+  {{ .Content }}
+</section>
+
+{{ end }}

@@ -1,0 +1,53 @@
+{
+	"title" : "Projects",
+	"projects" : [
+		{
+			"icon" : "journal-whills",
+			"title" : "DJVU - Literary Society website",
+			"description" : "Platform for college students to share literature pieces and artwork. Reduced loading time by 75% and developed a better UI for the site",
+			"link": "https://www.djvu.in/"
+		},
+		{
+			"icon" : "heartbeat",
+			"title" : "Low-bandwidth health monitoring",
+			"description" : "SIH 2019 hackathon project, built video-streaming system on Raspberry Pi using WebRTC, and NodeMCU for transmitting patient health data",
+			"link": "https://github.com/vixrant/shakal-io"
+		},
+		{
+			"icon" : "grin",
+			"title" : "Shakal.io",
+			"description" : "Used WebRTC for peer-to-peer communication, developed React dashboard and WebSockets server",
+			"link": "https://github.com/vixrant/shakal-io"
+		},
+		{
+			"icon" : "robot",
+			"title" : "Path-following robot",
+			"description" : "IIT Bombay eYantra competition - robot built using ATMEGA 2560 and Zigbee for communication with laptop",
+			"link": "https://github.com/vixrant/shakal-io"
+		},
+		{
+			"icon": "user-plus",
+			"title": "DJSCE NSS Website",
+			"description": "Website for social service unit of DJSCE",
+			"link": "https://djsce.ac.in/nss"
+		},
+		{
+			"icon": "cookie",
+			"title": "FoodFeed",
+			"description": "Hackathon project for redistribution of food which would've been wasted",
+			"link": "https://github.com/squirtle-skwad/spit-hackathon-2020/blob/master/PRESENTATION.pdf"
+		},
+		{
+			"icon": "hashtag",
+			"title": "Google Hashcode 2020",
+			"description": "Developed algorithms for solving Google Hashcode 2020's problem statement",
+			"link": "https://github.com/vixrant/hashcode-2020"
+		},
+		{
+			"icon": "globe-americas",
+			"title": "MUN website",
+			"description": "Developed and deployed website with form for Maharashtra Summit 2019",
+			"link": "https://vixrant.github.io/maharashtra-summit/"
+		}
+	]
+}

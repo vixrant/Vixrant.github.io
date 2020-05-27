@@ -1,0 +1,31 @@
+{
+	"title" : "Skills",
+	"skills" : {
+		"Languages": [
+			"Python",
+			"Javascript",
+			"Typescript",
+			"Java",
+			"C/C++",
+			"Go"
+		],
+		"Web development": [
+			"React",
+			"NodeJS",
+			"Bootstrap",
+			"GraphQL",
+			"REST",
+			"WebSockets",
+			"WebRTC",
+			"AWS",
+			"SQL",
+			"MongoDB",
+			"Linux",
+			"Firebase",
+			"LESS/SCSS",
+			"Vue",
+			"Flask",
+			"Django"
+		]
+	}
+}
