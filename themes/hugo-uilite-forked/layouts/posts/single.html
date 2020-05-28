@@ -1,16 +1,26 @@
 {{ define "main" }}
 
 
-<section>
+<section class="container">
   <a href="/posts" class="text-dark">
     <i class="fas fa-arrow-left"></i>
+    <h6 class="d-inline">Blog</h6>
   </a>
 
-  <div class="text-center my-4">
-    <h1>{{ .Title }}</h1>
-    <span class="text-muted">{{ .Date.Format "2 January, 2006" }}</span>
-  </div>
-  {{ .Content }}
+  <main class="d-flex flex-column align-items-center">
+    
+    <div class="my-4 text-center">
+      <h1>{{ .Title }}</h1>
+      <span class="text-muted">Posted on {{ .Date.Format "2 January, 2006" }}</span>
+    </div>
+  
+    <article>
+      {{ .Content }}
+    </article>
+
+    {{ partial "comments" . }}
+  </main>
+
 </section>
 
 {{ end }}

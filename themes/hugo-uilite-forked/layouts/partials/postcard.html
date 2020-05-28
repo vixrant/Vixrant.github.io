@@ -13,7 +13,9 @@
   
   <div>
       {{ range .Params.tags }}
-        <span class="badge badge-light">{{ . }}</span>
+        <a href="/tags/{{ . }}">
+          <span class="badge badge-light">#{{ . }}</span>
+        </a>
       {{ end }}
   </div>
 </div>

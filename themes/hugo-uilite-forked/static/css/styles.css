@@ -82,7 +82,7 @@ article img {
   max-width: 100%;
 }
 
-article code {
+article {
   background-color: #fbfbfb !important;
   width: 100%;
   max-width: 800px;
@@ -203,6 +203,11 @@ mark {
           transform: scale(1.3);
 }
 
+/******************
+ * Section styles *
+ *   and colors   *
+ ******************/
+
 section {
   padding: 10%;
 }
@@ -220,8 +225,9 @@ section.yellow .progress .bg-blue {
   background-color: #c19c43;
 }
 
-section.voilet {
-  background-color: #4768FD;
+section.red {
+  background-color: #eb4d4b;
+  color: white;
 }
 
 section.blue {
@@ -244,10 +250,6 @@ section.skin {
 section.aqua {
   background-color: #00fefe;
   color: #000 !important;
-}
-
-section.pink {
-  background-color: #fff1f1;
 }
 
 section.turquoise {

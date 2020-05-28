@@ -1,11 +1,12 @@
 {{ define "main" }}
 
-<section class="container-flud skin">
+<section class="container">
   <a href="/" class="text-dark">
     <i class="fas fa-arrow-left"></i>
+    <h6 class="d-inline">Home</h6>
   </a>
 
-  <h1 class="text-center my-4">{{ .Title }}</h1>
+  <h1 class="text-center my-5">{{ .Title }}</h1>
   
   <div class="row">
     {{ range .Pages }}

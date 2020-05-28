@@ -4,25 +4,25 @@
 		{
 			"icon" : "journal-whills",
 			"title" : "DJVU - Literary Society website",
-			"description" : "Platform for college students to share literature pieces and artwork. Reduced loading time by 75% and developed a better UI for the site",
+			"description" : "Platform for college students to share literature pieces and artwork",
 			"link": "https://www.djvu.in/"
 		},
 		{
 			"icon" : "heartbeat",
 			"title" : "Low-bandwidth health monitoring",
-			"description" : "SIH 2019 hackathon project, built video-streaming system on Raspberry Pi using WebRTC, and NodeMCU for transmitting patient health data",
+			"description" : "SIH 2019 hackathon project, with RPi, NodeMCU, React, React Native, and WebRTC",
 			"link": "https://github.com/vixrant/shakal-io"
 		},
 		{
 			"icon" : "grin",
 			"title" : "Shakal.io",
-			"description" : "Used WebRTC for peer-to-peer communication, developed React dashboard and WebSockets server",
+			"description" : "Peer-to-peer video communication with WebRTC and React",
 			"link": "https://github.com/vixrant/shakal-io"
 		},
 		{
 			"icon" : "robot",
 			"title" : "Path-following robot",
-			"description" : "IIT Bombay eYantra competition - robot built using ATMEGA 2560 and Zigbee for communication with laptop",
+			"description" : "IIT Bombay eYantra competition - robot built using ATMEGA 2560 and Zigbee",
 			"link": "https://github.com/vixrant/shakal-io"
 		},
 		{
@@ -46,7 +46,7 @@
 		{
 			"icon": "globe-americas",
 			"title": "MUN website",
-			"description": "Developed and deployed website with form for Maharashtra Summit 2019",
+			"description": "Website with form for Maharashtra Summit 2019 MUN",
 			"link": "https://vixrant.github.io/maharashtra-summit/"
 		}
 	]
