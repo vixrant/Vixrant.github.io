@@ -7,13 +7,24 @@
     <h6 class="d-inline">Blog</h6>
   </a>
 
+  <div class="text-center my-5">
+    <h1>{{ .Title }}</h1>
+    <div class="text-muted">Posted on {{ .Date.Format "2 January, 2006" }}</div>
+    {{ range .Params.tags }}
+      <a href="/tags/{{ . }}">
+        <span class="badge badge-light">#{{ . }}</span>
+      </a>
+    {{ end }}
+  </div>
+
   <main class="d-flex flex-column align-items-center">
-    
-    <div class="my-4 text-center">
-      <h1>{{ .Title }}</h1>
-      <span class="text-muted">Posted on {{ .Date.Format "2 January, 2006" }}</span>
-    </div>
-  
+    {{ if isset .Params "feature_img" }}
+    {{ range .Resources.Match .Params.feature_img }}
+      <img src="{{ .RelPermalink }}"
+        class="mx-auto d-block my-4" style="max-width:100%;width:800px;border-radius:6px;" alt="featured image">
+    {{ end }}
+    {{ end }}
+
     <article>
       {{ .Content }}
     </article>

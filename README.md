@@ -12,7 +12,7 @@
 
 ### About
 
-The website is currently built on Hugo using a custom theme.
+The website is currently built on Hugo using a forked version of Hugo UILite free. The blog was added on top of the free version.
 
 ---
 

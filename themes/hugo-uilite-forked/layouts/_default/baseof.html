@@ -1,5 +1,11 @@
 {{ partial "header.html" . }}
 
-{{ block "main" . }}{{ end }}
+{{ block "body" . }}
+  {{ block "main" . }}{{ end }}
+{{ end }}
+
+{{ block "footer" . }}
+  {{ partial "footer" . }}
+{{ end }}
 
 {{ partial "footer-scripts.html" . }}

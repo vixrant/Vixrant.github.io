@@ -1,4 +1,5 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
+
 {{ partial "home/sidebar.html" . }}
 
 <div class="main-content">
@@ -15,4 +16,8 @@
 	{{ partial "home/contact.html" . }}		
 </div>
 
-{{ partial "footer-scripts.html" . }}
+{{ end }}
+
+{{ define "footer" }}
+<span></span>
+{{ end }}

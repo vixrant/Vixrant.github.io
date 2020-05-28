@@ -6,14 +6,14 @@
     <h6 class="d-inline">Home</h6>
   </a>
 
-  <h1 class="text-center my-4">#{{ .Title }}</h1>
+  <h1 class="text-center my-5">#{{ .Title }}</h1>
   
   {{ range .Pages }}
     <article class="row">
-      <b class="col-3">
+      <b class="col-12 col-md-3">
         {{ .Date.Format "02-01-2006" }}
       </b>
-      <a class="col-9 text-dark" href="{{ .Permalink }}">
+      <a class="col-12 col-md-9 text-dark" href="{{ .Permalink }}">
         <h4>{{ .Title }}</h4>
       </a>
     </article>
