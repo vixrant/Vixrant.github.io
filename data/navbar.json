@@ -2,11 +2,11 @@
   "links": [
     {
       "text": "Blog",
-      "link": "/blog"
+      "href": "/blog"
     },
     {
       "text": "Contact",
-      "link": "/#contact"
+      "href": "/#contact"
     }
   ]
 }
