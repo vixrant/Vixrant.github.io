@@ -2,5 +2,6 @@ baseURL = "https://www.vikrantgajria.me/"
 languageCode = "en-us"
 title = "🧶 Vikrant Gajria"
 
+pygmentsUseClasses = true
 googleAnalytics = "UA-117154240-1"
 
