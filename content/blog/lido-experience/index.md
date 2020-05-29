@@ -31,6 +31,7 @@ And mind you, all of this happened in 2 months! I went from doing what I know in
 
 ## Takeaways
 From all the projects that I mentioned above, I learned a whole slew of new technologies. However, the 5 real takeaways from my internship are:
+
 - An hour of planning saves weeks of frustration
 - A project with good coding standard is self-explanatory to your co-workers
 - Scalability of a project very important for a fast-moving start-up
