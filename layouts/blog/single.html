@@ -2,10 +2,7 @@
 
 
 <section class="container">
-  <a href="/blog" class="text-dark">
-    <i class="fas fa-arrow-left"></i>
-    <h6 class="d-inline">Blog</h6>
-  </a>
+  {{ partial "components/back" (dict "text" "Blog" "href" "/blogs") }}
 
   <div class="text-center my-5">
     <h1>{{ .Title }}</h1>
