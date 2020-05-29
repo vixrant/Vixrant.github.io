@@ -57,6 +57,20 @@ mark {
   /*display: inline-block;*/
 }
 
+/*************
+ * Selection *
+ *************/
+
+::-moz-selection {
+  background: blue;
+  color: white;
+}
+
+::selection {
+  background: blue;
+  color: white;
+}
+
 /***********
  * Sidebar *
  ***********/
