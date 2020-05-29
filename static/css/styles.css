@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 mark {
-  background-color: #00c3ff;
+  background-color: yellow;
   padding: 4px 8px;
   /*display: inline-block;*/
 }
