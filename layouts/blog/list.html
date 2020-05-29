@@ -1,14 +1,15 @@
 {{ define "main" }}
 
 <section class="container">
+  
   {{ partial "components/back" (dict "text" "Home" "href" "/") }}
 
-  <h1 class="text-center my-5">{{ .Title }}</h1>
+  <h1 class="text-center mt-5">{{ .Title }}</h1>
   
-  <div class="w-100 d-flex justify-content-center flex-wrap">
+  <div class="w-100 mb-5 d-flex justify-content-center flex-wrap">
     {{ range $key, $value := .Site.Taxonomies.tags }}
     <a href="/tags/{{ $key }}">
-      <h5><span class="badge badge-lg badge-light m-1">#{{ $key }}</span></h5>
+      <span class="badge badge-lg badge-light m-1">#{{ $key }}</span>
     </a>
     {{ end }}
   </div>

@@ -1,11 +1,16 @@
 {{ partial "header.html" . }}
 
 {{ block "body" . }}
+  {{ block "header" . }}
+    {{ partial "components/navbar" . }}
+  {{ end }}
+
   {{ block "main" . }}{{ end }}
+
+  {{ block "footer" . }}
+    {{ partial "components/footer" . }}
+  {{ end }}
 {{ end }}
 
-{{ block "footer" . }}
-  {{ partial "footer" . }}
-{{ end }}
 
 {{ partial "footer-scripts.html" . }}

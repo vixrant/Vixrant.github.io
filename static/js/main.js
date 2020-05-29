@@ -13,10 +13,10 @@
 *
 */
 
-
 let menuBtn = $("#menuBar");
 
-menuBtn.click(function() {
+menuBtn.click(function(e) {
+  e.preventDefault();
 
   $('.hamburger-menu').toggleClass('animate');
 

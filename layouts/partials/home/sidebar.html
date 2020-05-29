@@ -1,3 +1,4 @@
+{{ $config := .Site.Data.config }}
 {{ $sidebar := .Site.Data.sidebar }}
 {{ $social := .Site.Data.social }}
 {{ $socialfas := .Site.Data.socialfas}}
@@ -5,13 +6,12 @@
 <section id="sidebar" class="sidebar d-flex align-items-center p-5">
   <div class="main-info">
 
-    <img src="{{.Site.BaseURL}}images/{{ $sidebar.displayPicture }}" class="rounded-circle mb-3" width="160px">
+    <img src="{{.Site.BaseURL}}images/{{ $config.displayPicture }}" class="rounded-circle mb-3" width="160px">
 
     <h1 class="heading">{{ $sidebar.title }} <mark>{{ $sidebar.highlightedText }}</mark></h1>
     <p class="text-muted">{{ $sidebar.description }}</p>
 
     <div class="social my-4">
-
       {{ range $key, $value := $social }}
         <a target="_blank" href="{{ $value }}" rel="me">
           <i class="fab fa-{{ $key }}"></i>
@@ -23,7 +23,6 @@
           <i class="fas fa-{{ $key }}"></i>
         </a>
       {{ end }}
-
     </div>
 
     <a href="{{ $sidebar.resume }}" class="btn btn-dark btn-lg">Resume</a>

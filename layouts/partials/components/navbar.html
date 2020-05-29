@@ -1,0 +1,45 @@
+{{ $config := .Site.Data.config }}
+{{ $navbar := .Site.Data.navbar }}
+{{ $social := .Site.Data.social }}
+{{ $socialfas := .Site.Data.socialfas}}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white mt-lg-0 mt-3" style="position:relative">
+	<a id="menuBar" class="bg-white" style="cursor: pointer; position: absolute; height: 22px; width: 30px;">
+		<div class="hamburger-menu"></div>
+	</a>
+
+  <span class="mr-auto primaryMenu active">
+    <a class="navbar-brand ml-auto" href="/">
+        <img style="width:40px" src="{{.Site.BaseURL}}images/{{ $config.displayPicture }}" alt="" class="rounded-circle mr-2">
+        <span style="font-size: 20px" class="heading">{{ .Site.Title }}</span>
+      </a>
+  </span>
+
+	<div class="secondaryMenu p-3 bg-white">
+		<div>
+      {{ range $navbar.links  }}
+      <a href="{{ .href }}">
+        <h4 class="d-inline-block mr-3 text-dark mb-0">
+          {{ .text }}
+        </h4>
+      </a>
+      {{ end }}
+		</div>
+	</div>
+
+	<div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+      <span class="mr-auto"></span>
+
+      {{ range $key, $value := $social }}
+        <a target="_blank" href="{{ $value }}" class="nav-link text-dark" rel="me">
+          <i class="fab fa-{{ $key }}"></i>
+        </a>
+      {{ end }}
+
+      {{ range $key, $value := $socialfas }}
+        <a target="_blank" href="{{ $value }}" class="nav-link text-dark">
+          <i class="fas fa-{{ $key }}"></i>
+        </a>
+      {{ end }}
+	</div>
+</nav>

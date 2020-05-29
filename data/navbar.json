@@ -1,0 +1,12 @@
+{
+  "links": [
+    {
+      "text": "Blog",
+      "link": "/blog"
+    },
+    {
+      "text": "Contact",
+      "link": "/#contact"
+    }
+  ]
+}
