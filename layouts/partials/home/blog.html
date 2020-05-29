@@ -1,4 +1,4 @@
-{{ $posts := (where .Site.RegularPages "Section" "posts") }}
+{{ $posts := (where .Site.RegularPages "Section" "blog") }}
 
 
 <section class="skin">
@@ -15,7 +15,7 @@
     {{ end }}
 
     <div class="col-lg-2 col-12 align-items-end d-flex align-items-center">
-      <a href="/posts" class="btn btn-dark-faded rounded-circle p-4 text-center">
+      <a href="/blog" class="btn btn-dark-faded rounded-circle p-4 text-center">
         <img src="{{.Site.BaseURL}}assets/next.svg" alt="Go to posts" width="40px">
       </a>
     </div>
