@@ -1,7 +1,6 @@
 baseURL = "https://www.vikrantgajria.me/"
 languageCode = "en-us"
 title = "🧶 Vikrant Gajria"
-theme = "hugo-uilite-forked"
 
 googleAnalytics = "UA-117154240-1"
 

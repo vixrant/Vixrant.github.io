@@ -8,8 +8,8 @@
 </div>
 
 <div style="z-index: 4; position: relative;">
-	{{ if gt (len (where .Data.Pages "Type" "posts")) 0 }}{{ partial "home/blog.html" . }}{{ end }}
 	{{ if .Site.Data.projects }}{{ partial "home/projects.html" . }}{{ end }}
+	{{ if gt (len (where .Data.Pages "Type" "posts")) 0 }}{{ partial "home/blog.html" . }}{{ end }}
 </div>
 
 <div class="main-content">

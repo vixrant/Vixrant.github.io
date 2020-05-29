@@ -1,15 +1,65 @@
+/*************
+ * Overrides *
+ *************/
+
+/* No scrolling allowed at all. */
 html {
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a:hover {
   text-decoration: none;
 }
+
+article p {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+article img {
+  max-width: 100%;
+}
+
+article {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+article {
+  font-size: 18px !important;
+  line-height: 1.8rem;
+}
+
+article mark {
+  background-color: white;
+  color: #c80000;
+}
+
+.heading,
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-size: 38px;
+}
+
+mark {
+  background-color: #00c3ff;
+  padding: 4px 8px;
+  /*display: inline-block;*/
+}
+
+/***********
+ * Sidebar *
+ ***********/
 
 .sidebar {
   position: fixed;
@@ -34,6 +84,18 @@ a:hover {
           transform: translateX(0);
   opacity: 1;
 }
+
+@media (max-width: 767px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    padding-left: 65px;
+  }
+}
+
+/*********************
+ * Home main content *
+ *********************/
 
 .main-content {
   position: relative;
@@ -69,51 +131,97 @@ a:hover {
   background-color: #fff;
 }
 
-article {
-  font-size: 18px !important;
-  line-height: 1.8rem;
+@media (max-width: 767px) {
+  .main-content {
+    width: 100%;
+    margin-left: 0%;
+  }
 }
 
-article p {
-  color: rgba(0, 0, 0, 0.8);
-}
-
-article img {
-  max-width: 100%;
-}
-
-article {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-article mark {
-  background-color: white;
-  color: #c80000;
-}
-
-.heading,
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.heading {
-  font-size: 38px;
-}
-
-mark {
-  background-color: #00c3ff;
-  padding: 4px 8px;
-  /*display: inline-block;*/
-}
+/******************
+ * Bootstrap form *
+ ******************/
 
 .form-control {
   border: none;
   background-color: #e8ebef !important;
 }
+
+/***************************
+ * Bootstrap Progress Bars *
+ ***************************/
+
+ .progress {
+  height: 0.6rem;
+  background-color: #fff;
+}
+
+.progress .bg-blue {
+  background-color: #2e96a5;
+}
+
+ /*****************
+ * Bootstrap Card *
+ ******************/
+
+.card {
+  border-radius: 6px;
+  border: none;
+}
+
+/*********************
+ * Bootstrap Buttons *
+ *********************/
+
+ .btn {
+  border-radius: 6px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn.btn-primary {
+  background-color: #31E7B6;
+  border-color: #31E7B6;
+}
+
+.btn.btn-primary:hover {
+  background-color: #32d2a7;
+  border-color: #32d2a7;
+}
+
+.btn.btn-primary:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  background-color: #32d2a7;
+  border-color: #32d2a7;
+}
+
+.btn-dark-faded {
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif !important;
+  /*text-transform: uppercase;*/
+  background-color: rgba(0, 0, 0, 0.07);
+  color: black;
+}
+
+/************************
+ * Bootstrap Pagination *
+ ************************/
+
+.pagination .page-item.active .page-link {
+  background-color: black;
+  border-color: black !important;
+  color: #fff !important;
+}
+
+.pagination .page-link {
+  border: none;
+  color: #000 !important;
+}
+
+/**********
+ * Menus? *
+ **********/
 
 .primaryMenu {
   -webkit-transform: translateY(-90px);
@@ -150,36 +258,9 @@ mark {
           transform: translateY(0px);
 }
 
-.btn {
-  border-radius: 6px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.btn.btn-primary {
-  background-color: #31E7B6;
-  border-color: #31E7B6;
-}
-
-.btn.btn-primary:hover {
-  background-color: #32d2a7;
-  border-color: #32d2a7;
-}
-
-.btn.btn-primary:active {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-  background-color: #32d2a7;
-  border-color: #32d2a7;
-}
-
-.btn-dark-faded {
-  font-weight: 300;
-  font-family: 'Montserrat', sans-serif !important;
-  /*text-transform: uppercase;*/
-  background-color: rgba(0, 0, 0, 0.07);
-  color: black;
-}
+/****************
+ * Social icons *
+ ****************/
 
 .social:hover a {
   color: rgba(0, 0, 0, 0.4);
@@ -189,8 +270,8 @@ mark {
   color: black;
   font-size: 28px;
   margin-right: 12px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 .social a:hover {
@@ -224,22 +305,20 @@ section.yellow .progress .bg-blue {
   background-color: #c19c43;
 }
 
-section.red {
-  background-color: #eb4d4b;
-  color: white;
+section.purple {
+  background-color: #a29bfe;
 }
 
 section.blue {
   background-color: #cadfdf;
 }
 
-section.orange {
-  color: #fff;
-  background-color: #fb7833;
+section.red {
+  background-color: #e77f67;
 }
 
 section.green {
-  background-color: #aaffa7;
+  background-color: #26de81;
 }
 
 section.skin {
@@ -252,22 +331,12 @@ section.aqua {
 }
 
 section.turquoise {
-  background-color: turquoise;
+  background-color: #2bcbba;
 }
 
-.progress {
-  height: 0.6rem;
-  background-color: #fff;
-}
-
-.progress .bg-blue {
-  background-color: #2e96a5;
-}
-
-.card {
-  border-radius: 6px;
-  border: none;
-}
+/*****************
+ * Timeline Flow *
+ *****************/
 
 #timeline {
   width: 100%;
@@ -335,36 +404,7 @@ section.turquoise {
   text-align: left;
 }
 
-.pagination .page-item.active .page-link {
-  background-color: black;
-  border-color: black !important;
-  color: #fff !important;
-}
-
-.pagination .page-link {
-  border: none;
-  color: #000 !important;
-}
-
-.skill {
-  margin-bottom: 20px;
-}
-
-/**********
- * Mobile *
- **********/
-
 @media (max-width: 767px) {
-  .sidebar {
-    position: static;
-    width: 100%;
-    padding-left: 65px;
-  }
-  .main-content {
-    width: 100%;
-    margin-left: 0%;
-  }
-
   #timeline {
     margin: 30px;
     padding: 0px;
@@ -388,6 +428,14 @@ section.turquoise {
   #timeline .timeline-item .timeline-icon {
     left: 0;
   }
+}
+
+/******************
+ * Skills Section *
+ ******************/
+
+.skill-group {
+  margin-bottom: 20px;
 }
 
 /******************
@@ -457,4 +505,3 @@ section.turquoise {
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 350ms 350ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 350ms 350ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 350ms 350ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-/*# sourceMappingURL=styles.css.map */
