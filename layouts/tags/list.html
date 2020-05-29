@@ -3,7 +3,7 @@
 <section class="container">
   {{ partial "components/back" (dict "text" "Blog" "href" "/blog") }}
 
-  <h1 class="text-center my-5">Tag #{{ .Title }}</h1>
+  <h1 class="text-center my-5">#{{ .Title }}</h1>
   
   {{ range .Pages }}
     <article class="row">
