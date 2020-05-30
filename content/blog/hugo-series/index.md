@@ -27,6 +27,7 @@ tags:
 You may have used tags taxonomy in hugo before. The key `tags` is called the taxonomy term, and the list of tags is the value. This relates our post to the two tags - `hugo` and `tutorial`.
 
 However, what many people don't realise, is that:
+
 1. You can define custom taxonomies in your config.
 2. You can use strings instead of values in taxonomy values!
 
