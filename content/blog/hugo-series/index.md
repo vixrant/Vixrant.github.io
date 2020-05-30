@@ -8,7 +8,7 @@ tags:
 series: How to Hugo
 ---
 
-Want to write a series of posts, without linking them to each other manually? With Hugo, we can implement it with some programming. In this post I'll explain how to add series to your Hugo blog.
+Want to write a series of posts, without linking them to each other manually? dev.to has this feature. With Hugo, we can implement it with some programming. In this post I'll explain how to add series to your Hugo blog.
 
 ## Taxonomies
 
