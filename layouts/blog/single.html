@@ -39,19 +39,19 @@
   </div>
 
   {{ if .Params.series }}
-    {{ $name := .Params.series  }}
+    {{ $s := .Params.series  }}
+    {{ $slug := $s | urlize }}
 
     <div class="row">
-      <a href="/series/{{ $name }}" class="text-dark">
+      <a href="/series/{{ $slug }}" class="text-dark">
         <h4 class="d-inline">
-          Series {{ $name }}
+          Series {{ $s }}
           <i class="fas fa-angle-double-right"></i>
         </h4>
       </a>
     </div>
 
-    {{ $name := $name | urlize }}
-    {{ $series := index .Site.Taxonomies.series $name }}
+    {{ $series := index .Site.Taxonomies.series $slug }}
     <div class="row">
     {{ range $series.Pages }}
       <div class="col-lg-4 col-md-6 col-12 mb-3">
