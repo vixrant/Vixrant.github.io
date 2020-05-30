@@ -1,4 +1,4 @@
-{{ $config := .Site.Data.config }}
+{{ $config := .Site.Params.Author }}
 {{ $sidebar := .Site.Data.sidebar }}
 {{ $social := .Site.Data.social }}
 {{ $socialfas := .Site.Data.socialfas}}
@@ -6,7 +6,7 @@
 <section id="sidebar" class="sidebar d-flex align-items-center p-5">
   <div class="main-info">
 
-    <img src="{{.Site.BaseURL}}images/{{ $config.displayPicture }}" class="rounded-circle mb-3" width="160px">
+    <img src="{{.Site.BaseURL}}images/{{ $config.pic }}" class="rounded-circle mb-3" width="160px">
 
     <h1 class="heading">{{ $sidebar.title }} <mark>{{ $sidebar.highlightedText }}</mark></h1>
     <p class="text-muted">{{ $sidebar.description }}</p>

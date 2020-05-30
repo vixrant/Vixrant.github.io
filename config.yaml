@@ -8,3 +8,19 @@ googleAnalytics: "UA-117154240-1"
 taxonomies:
   tags: tags
   series: series
+
+params:
+  author:
+    name: Vikrant Gajria
+    email: vikrantgajria@gmail.com
+    pic: face.jpg
+
+  footer:
+    text: Copyright © 2020 Vikrant Gajria
+
+  navbar:
+    - text: Blog
+      href: /blog
+    - text: Contact
+      href: /#contact
+  

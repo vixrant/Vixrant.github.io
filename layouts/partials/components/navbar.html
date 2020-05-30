@@ -1,5 +1,5 @@
-{{ $config := .Site.Data.config }}
-{{ $navbar := .Site.Data.navbar }}
+{{ $me := .Site.Params.Author }}
+{{ $navbar := .Site.Params.Navbar }}
 {{ $social := .Site.Data.social }}
 {{ $socialfas := .Site.Data.socialfas}}
 
@@ -10,14 +10,14 @@
 
   <span class="mr-auto primaryMenu active">
     <a class="navbar-brand ml-auto" href="/">
-        <img style="width:40px" src="{{.Site.BaseURL}}images/{{ $config.displayPicture }}" alt="" class="rounded-circle mr-2">
+        <img style="width:40px" src="{{.Site.BaseURL}}images/{{ $me.pic }}" alt="" class="rounded-circle mr-2">
         <span style="font-size: 20px" class="heading">{{ .Site.Title }}</span>
       </a>
   </span>
 
 	<div class="secondaryMenu p-3 bg-white">
 		<div>
-      {{ range $navbar.links  }}
+      {{ range $navbar  }}
       <a href="{{ .href }}">
         <h4 class="d-inline-block mr-3 text-dark mb-0">
           {{ .text }}
