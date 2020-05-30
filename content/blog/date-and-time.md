@@ -27,7 +27,7 @@ Lucky for us, Java 8 introduced a new [LocalDate](https://docs.oracle.com/javase
 
 LocalDate represents an immutable object with loads of predefined methods for our ease. It's a delight to finally just say `d.addDays ()` instead of writing redundant calculations or our own implementation of those calculations.
 
-### Notes about LocalDate:
+### Notes about `LocalDate`:
 
 * LocalDate has private constructors. You cannot instantiate it. Instead, we have static methods which return the object we need.
 

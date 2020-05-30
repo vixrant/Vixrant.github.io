@@ -14,7 +14,14 @@
     </div>
     {{ end }}
   </a>
-  <small class="text-muted">{{ .Date.Format "January 2, 2006" }}</small>
+
+  <div class="text-muted d-flex justify-content-between">
+    <small>{{ .Date.Format "January 2, 2006" }}</small>
+    <small>
+      <i class="fas fa-clock"></i>
+      {{ .ReadingTime }} min
+    </small>
+  </div>
 
   <a href="{{ .Permalink }}">
     <h3 class="h4 font-weight-bold text-dark">{{ .Title }}</h3>

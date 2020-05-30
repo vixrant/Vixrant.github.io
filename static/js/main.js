@@ -47,9 +47,7 @@ function scrollTo(target) {
 }
 
 $(document).ready(function() {
-  var elements = $(".sidebar > .main-info *");
-
-  console.log(elements);
+  const elements = $(".sidebar > .main-info *");
 
   for (let i = 0; i < elements.length; i++) {
     setTimeout(function() {

@@ -1,9 +1,9 @@
 ---
 title: Internship Experience - Lido Learning
 date: 2019-08-25
+feature_img: desk.jpeg
 tags:
 - internship
-feature_img: desk.jpeg
 ---
 
 It's May 2019. Summer heat is burning my body, and so is my anticipation of getting selected at top MNC for an internship. I had applied for big name companies such as Google, Github, and IBM way back in March. However I still didn't receive any response from these companies. I was terrified. If I couldn't find an internship for this summer, I would miss out on learning industry-standard technologies.

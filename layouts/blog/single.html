@@ -6,7 +6,12 @@
 
   <div class="text-center my-5">
     <h1>{{ .Title }}</h1>
-    <div class="text-muted">Posted on {{ .Date.Format "2 January, 2006" }}</div>
+    <div class="text-muted">
+      Posted on {{ .Date.Format "2 January, 2006" }}
+      {{ if .Params.series }}
+        in series <a class="text-dark" href="/series/{{ .Params.series | urlize }}">{{ .Params.series }}</a>
+      {{ end }}
+    </div>
     {{ range .Params.tags }}
       <a href="/tags/{{ . }}">
         <span class="badge badge-light">#{{ . }}</span>
@@ -25,10 +30,36 @@
     <article>
       {{ .Content }}
     </article>
-
-    {{ partial "components/comments" . }}
   </main>
-
 </section>
+
+<div class="container">
+  <div class="row">
+    {{ partial "components/comments" . }}
+  </div>
+
+  {{ if .Params.series }}
+    {{ $name := .Params.series  }}
+
+    <div class="row">
+      <a href="/series/{{ $name }}" class="text-dark">
+        <h4 class="d-inline">
+          Series {{ $name }}
+          <i class="fas fa-angle-double-right"></i>
+        </h4>
+      </a>
+    </div>
+
+    {{ $name := $name | urlize }}
+    {{ $series := index .Site.Taxonomies.series $name }}
+    <div class="row">
+    {{ range $series.Pages }}
+      <div class="col-lg-4 col-md-6 col-12 mb-3">
+        {{ partial "components/postcard" . }}
+      </div>
+    {{ end }}
+    </div>
+  {{end}}
+</div>
 
 {{ end }}

@@ -1,9 +1,9 @@
 ---
 title: Participating solo in a hackathon
 date: 2018-10-07
+feature_img: tshirt.jpeg
 tags:
 - hackathon
-feature_img: tshirt.jpeg
 ---
 
 I went to KJSCE Hackathon on 5th-6th October, 2018. As a sophomore it's crazy to think about going to a hackathon all alone competing against 55 teams of junior or senior year students with more experience. But I wanted to try my hand at it anyway, allured by the fact that it was sponsored and recognised by some of the big companies in the industry.
