@@ -1,7 +1,7 @@
 +++
 date = 2020-09-11T18:30:00Z
 draft = true
-feature_img = "/uploads/screenshot-2020-09-12-at-11-38-30-am.png"
+feature_img = "/uploads/screenshot-2020-09-12-at-12-15-23-pm.png"
 series = ""
 tags = ["compiler", "cpp", "emacs"]
 title = "My Emacs set-up for C++ and LLVM"
