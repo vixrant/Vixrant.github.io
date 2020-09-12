@@ -1,12 +1,10 @@
 <div class="card p-4">
   <a class="mb-3" href="{{ .Permalink }}">
     {{ if isset .Params "feature_img" }}
-    {{ range .Resources.Match .Params.feature_img }}
       <div class="featuredImage rounded"
-        style="background-size:cover;background-position:center;background-image: url('{{ .RelPermalink }}'); height: 200px;background-color:#fbfbfb;"
+        style="background-size:cover;background-position:center;background-image: url('{{ .Param "feature_img" }}'); height: 200px;background-color:#fbfbfb;"
         >
       </div>
-    {{ end }}
     {{ else }}
     <div class="featuredImage rounded"
         style="background-size:cover;background-position:center;background-image: url('{{.Site.BaseURL}}assets/blog-fill.jpg'); height: 200px;background-color:#fbfbfb;"

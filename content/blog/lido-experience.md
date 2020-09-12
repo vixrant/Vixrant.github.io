@@ -1,7 +1,7 @@
 ---
 title: Internship Experience - Lido Learning
 date: 2019-08-25
-feature_img: desk.jpeg
+feature_img: /uploads/lido-experience.jpeg
 tags:
 - internship
 ---

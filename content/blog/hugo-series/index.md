@@ -1,7 +1,7 @@
 ---
 title: Implementing post series in Hugo
 date: 2020-05-30
-feature_img: feature.svg
+feature_img: /uploads/hugo-series.svg 
 tags:
 - hugo
 - tutorial

@@ -1,6 +1,5 @@
 {{ define "main" }}
 
-
 <section class="container">
   {{ partial "components/back" (dict "text" "Blog" "href" "/blog") }}
 
@@ -21,10 +20,8 @@
 
   <main class="d-flex flex-column align-items-center">
     {{ if isset .Params "feature_img" }}
-    {{ range .Resources.Match .Params.feature_img }}
-      <img src="{{ .RelPermalink }}"
+      <img src="{{ .Param "feature_img" }}"
         class="mx-auto d-block my-4" style="max-width:890px;width:100%;height:auto;border-radius:6px;" alt="featured image">
-    {{ end }}
     {{ end }}
 
     <article>

@@ -1,7 +1,7 @@
 ---
 title: Participating solo in a hackathon
 date: 2018-10-07
-feature_img: tshirt.jpeg
+feature_img: /uploads/kjsce-18.jpeg
 tags:
 - hackathon
 ---
