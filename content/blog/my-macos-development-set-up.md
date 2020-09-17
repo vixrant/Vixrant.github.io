@@ -88,7 +88,7 @@ A good terminal and a good shell, together with a good font. Aesthetics matter a
 
 > Yet Another Dotfiles Manager
 
-However, I've never had a Dotfiles manager before. YADM is my first and only choice for a Dotfiles manager. It's a wrapper over Git so it's extremely hackable. I don't need to learn any new commands, I just do `yadm add -u -a , yadm commit -m "Text"`, `yadm push. It's simple and intuitive for any git user.`
+However, I've never had a Dotfiles manager before. YADM is my first and only choice for a Dotfiles manager. It's a wrapper over Git so it's extremely hackable. I don't need to learn any new commands, I just do `yadm add -u -a , yadm commit -m "Text"`, `yadm push`. It's simple and intuitive for any git user.
 
 `brew install yadm`
 
@@ -133,10 +133,10 @@ Again, I do not like hefty IDEs on my feeble laptop. So I try to configure text 
 
 `brew cask install visual-studio-code`
 
-A few extensions that I use are PlatformIO for embedded development and simple-ghc for simplistic Haskell development. Some standard extensions like 
+A few extensions that I use are PlatformIO for embedded development and simple-ghc for simplistic Haskell development. Some standard extensions like
 
 ## Conclusion
 
-The checklist presented in this article is what I absolutely need on any new laptop to start coding productively. Your requirements may vary depending on how comfortable you are with other tools. My set-up is so lightweight in nature that my 128GB laptop works pretty well for the kind of development I do. If you have any questions you can drop me an email or contact me on twitter @vixrant. 
+The checklist presented in this article is what I absolutely need on any new laptop to start coding productively. Your requirements may vary depending on how comfortable you are with other tools. My set-up is so lightweight in nature that my 128GB laptop works pretty well for the kind of development I do. If you have any questions you can drop me an email or contact me on twitter @vixrant.
 
 Furthermore, I am currently writing two more articles: one on my set-up for different programming languages, and one for my emacs configuration. Look forward to that!
