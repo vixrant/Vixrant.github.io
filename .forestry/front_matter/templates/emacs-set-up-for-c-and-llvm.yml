@@ -19,3 +19,4 @@ fields:
   label: series
 pages:
 - content/blog/my-emacs-set-up-for-c-and-llvm.md
+- content/blog/my-macos-development-set-up.md
