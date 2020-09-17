@@ -1,6 +1,5 @@
 +++
 date = 2020-09-16T18:30:00Z
-draft = true
 feature_img = "/uploads/goran-ivos-t8lmin09-mo-unsplash.jpg"
 series = "Development Environment"
 tags = ["set-up", "mac"]
