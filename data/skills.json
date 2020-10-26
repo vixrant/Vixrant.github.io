@@ -2,12 +2,22 @@
 	"title" : "Skills",
 	"skills" : {
 		"Languages": [
+			"C/C++",
 			"Python",
 			"Javascript",
 			"Typescript",
 			"Java",
-			"C/C++",
-			"Go"
+			"Go",
+			"Haskell",
+			"Lisp",
+			"LaTeX"
+		],
+		"Systems Programming": [
+			"Flex",
+			"Bison",
+			"ANTLR4",
+			"CMake",
+			"LLVM"
 		],
 		"Web development": [
 			"React",
