@@ -4,7 +4,6 @@
 
 <div class="main-content">
 	{{ if .Site.Data.experience }}{{ partial "home/experience.html" . }}{{ end }}
-	{{ if .Site.Data.skills }}{{ partial "home/skills.html" . }}{{ end }}
 </div>
 
 <div style="z-index: 4; position: relative;">
@@ -13,6 +12,7 @@
 </div>
 
 <div class="main-content">
+	{{ if .Site.Data.skills }}{{ partial "home/skills.html" . }}{{ end }}
 	{{ partial "home/contact.html" . }}		
 </div>
 
