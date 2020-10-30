@@ -3,16 +3,15 @@
 {{ partial "home/sidebar.html" . }}
 
 <div class="main-content">
-	{{ if .Site.Data.experience }}{{ partial "home/experience.html" . }}{{ end }}
+	{{ partial "home/about.html" . }}
+	{{ partial "home/projects.html" . }}
 </div>
 
 <div style="z-index: 4; position: relative;">
-	{{ if gt (len (where .Data.Pages "Type" "blog")) 0 }}{{ partial "home/blog.html" . }}{{ end }}
-	{{ if .Site.Data.projects }}{{ partial "home/projects.html" . }}{{ end }}
+	{{ partial "home/blog.html" . }}
 </div>
 
 <div class="main-content">
-	{{ if .Site.Data.skills }}{{ partial "home/skills.html" . }}{{ end }}
 	{{ partial "home/contact.html" . }}		
 </div>
 

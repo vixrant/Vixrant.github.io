@@ -10,6 +10,7 @@ html {
 
 body {
   overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 a:hover {
@@ -42,9 +43,8 @@ article mark {
 
 .heading,
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 800;
-  text-transform: uppercase;
+  font-family: 'Montserrat', serif !important;
+  font-weight: 800 !important;
 }
 
 .heading {
@@ -54,7 +54,6 @@ h1, h2, h3, h4, h5, h6 {
 mark {
   background-color: yellow;
   padding: 4px 8px;
-  /*display: inline-block;*/
 }
 
 /*************
@@ -86,8 +85,8 @@ mark {
   height: 100%;
 }
 .sidebar .main-info * {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   opacity: 0;
   -webkit-transform: translateX(-40px);
           transform: translateX(-40px);
@@ -165,7 +164,7 @@ mark {
  * Bootstrap Progress Bars *
  ***************************/
 
- .progress {
+.progress {
   height: 0.6rem;
   background-color: #fff;
 }
@@ -183,6 +182,10 @@ mark {
   border: none;
 }
 
+.translucent {
+  background: rgba(0, 0, 0, 0.2);
+}
+
 /*********************
  * Bootstrap Buttons *
  *********************/
@@ -194,13 +197,13 @@ mark {
 }
 
 .btn.btn-primary {
-  background-color: #31E7B6;
-  border-color: #31E7B6;
+  background-color: #2bcbba;
+  border-color: #2bcbba;
 }
 
 .btn.btn-primary:hover {
-  background-color: #32d2a7;
-  border-color: #32d2a7;
+  background-color: #2bcbba;
+  border-color: #2bcbba;
 }
 
 .btn.btn-primary:active {
@@ -212,7 +215,7 @@ mark {
 
 .btn-dark-faded {
   font-weight: 300;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
   /*text-transform: uppercase;*/
   background-color: rgba(0, 0, 0, 0.07);
   color: black;
@@ -315,24 +318,21 @@ section.yellow {
   color: #000 !important;
 }
 
-section.yellow .progress .bg-blue {
-  background-color: #c19c43;
-}
-
 section.purple {
   background-color: #a29bfe;
 }
 
 section.blue {
-  background-color: #cadfdf;
+  background-color:#7efff5;
 }
 
 section.red {
-  background-color: #e77f67;
+  background-color: #F62459;
+  color: white;
 }
 
 section.green {
-  background-color: #26de81;
+  background-color: #36D7B7;
 }
 
 section.skin {
@@ -346,110 +346,6 @@ section.aqua {
 
 section.turquoise {
   background-color: #2bcbba;
-}
-
-/*****************
- * Timeline Flow *
- *****************/
-
-#timeline {
-  width: 100%;
-  position: relative;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-#timeline:before {
-  content: "";
-  width: 3px;
-  height: 100%;
-  background: #000;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  top: 0;
-  position: absolute;
-}
-
-#timeline:after {
-  content: "";
-  clear: both;
-  display: table;
-  width: 100%;
-}
-
-#timeline .timeline-item {
-  margin-bottom: 50px;
-  position: relative;
-  text-align: right;
-}
-
-#timeline .timeline-item .timeline-icon {
-  background: #000;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  overflow: hidden;
-  margin-left: -10px;
-  border-radius: 50%;
-}
-
-#timeline .timeline-item .timeline-content {
-  width: 45%;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-#timeline .timeline-item .timeline-content p {
-  color: rgba(0, 0, 0, 0.7);
-}
-
-#timeline .timeline-item .timeline-content .date {
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  border-radius: 3px;
-}
-
-#timeline .timeline-item .timeline-content.right {
-  float: right;
-  text-align: left;
-}
-
-@media (max-width: 767px) {
-  #timeline {
-    margin: 30px;
-    padding: 0px;
-    width: 90%;
-  }
-  #timeline:before {
-    left: 0;
-  }
-  #timeline .timeline-item .timeline-content {
-    width: 90%;
-    float: right;
-    text-align: left;
-  }
-  #timeline .timeline-item .timeline-content:before,
-  #timeline .timeline-item .timeline-content .right:before {
-    left: 10%;
-    margin-left: -6px;
-    border-left: 0;
-    border-right: 7px solid #ee4d4d;
-  }
-  #timeline .timeline-item .timeline-icon {
-    left: 0;
-  }
-}
-
-/******************
- * Skills Section *
- ******************/
-
-.skill-group {
-  margin-bottom: 20px;
 }
 
 /******************
