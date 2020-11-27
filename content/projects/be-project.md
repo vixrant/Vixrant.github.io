@@ -1,5 +1,5 @@
 ---
-title: Touchless interfaces for post-pandemic devices with fine gesture recognition
+title: BE Project - Touchless interfaces using deep learning
 ---
 
 With the pandemic inducing a fear of physical contact in people, I and my group
