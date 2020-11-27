@@ -1,15 +1,25 @@
-{{ partial "header.html" . }}
+<!DOCTYPE html>
 
-{{ block "body" . }}
-  {{ block "header" . }}
-    {{ partial "components/navbar" . }}
+<html lang="en-US">
+<head>
+  <title>
+    {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+    {{ if .IsHome }}
+      {{ .Site.Title }}
+    {{ else }}
+      {{ .Title }} | {{ .Site.Title }}
+    {{ end }}
+  </title>
+  
+  {{ partial "header" . }}
+  {{ partial "seo_schema.html" . }}
+</head>
+<body class="animate__animated animate__fadeIn">
+  {{ block "body" . }}
+    {{ partial "navbar" . }}
+    {{ block "main" . }}{{ end }}
   {{ end }}
 
-  {{ block "main" . }}{{ end }}
-
-  {{ block "footer" . }}
-    {{ partial "components/footer" . }}
-  {{ end }}
-{{ end }}
-
-{{ partial "footer-scripts.html" . }}
+  {{ partial "scripts" . }}
+</body>
+</html>

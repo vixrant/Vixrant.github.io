@@ -1,15 +1,26 @@
-baseURL: https://www.vgajria.com/
+baseURL: https://www.vgajria.com
 languageCode: en-us
 title: Vikrant Gajria
 
 googleAnalytics: UA-117154240-1
 
-pygmentsuseclasses: true
-pygmentscodefences: true
-
 taxonomies:
   tag: tags
   series: series
+
+markup:
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: pastie
+    tabWidth: 4
 
 params:
   author:
@@ -17,12 +28,32 @@ params:
     email: vikrantgajria@gmail.com
     pic: face.jpg
 
+  links:
+    - icon: fab fa-linkedin 
+      name: LinkedIn
+      href: https://www.linkedin.com/in/vikrantgajria
+    - icon: fab fa-twitter-square 
+      name: Twitter
+      href: https://www.twitter.com/vixrant
+    - icon: fab fa-github-square 
+      name: Github
+      href: https://www.github.com/vixrant
+    - icon: fas fa-envelope
+      name: E-mail
+      href: mailto:vikrantgajria@gmail.com
+    - icon: fas fa-key
+      name: Public key
+      href: /public-key.gpg
+     
   footer:
     text: Copyright © 2020 Vikrant Gajria
 
   navbar:
+    - text: Home 
+      href: /
     - text: Blog
       href: /blog
-    - text: Contact
-      href: /#contact
+    - text: CV
+      href: https://goo.gl/8YszZv
+
   

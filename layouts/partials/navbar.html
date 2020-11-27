@@ -1,0 +1,11 @@
+{{ $links := .Site.Params.navbar }}
+
+<nav class="navbar navbar-light justify-content-center">
+    {{ range $links }}
+        <a href="{{ .href }}">
+            <button type="button" class="btn btn-light btn-hover-pink fw-bold m-1">
+                {{ .text }}
+            </button>
+        </a>
+    {{ end }}
+</nav>
