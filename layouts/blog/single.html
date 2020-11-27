@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+<article class="container hugo-content" style="padding-left: 10vw; padding-right: 10vw;">
+    <section class="py-5 d-flex flex-column align-items-center">
+        <h1 class="text-center">{{ .Title }}</h1>
+
+        <span class="h6 text-muted">
+            {{ .Date.Format "Jan 02, 2006" }}
+            {{ if .Params.series }}
+                in series <a class="text-dark" href="/series/{{ .Params.series | urlize }}">{{ .Params.series }}</a> 
+            {{ end }}
+        </span>
+
+
+        <div class="d-flex flex-wrap text-uppercase">
+            {{ range .Params.tags }}
+                <a href="/tags/{{ . }}">
+                    <span class="badge bg-dark m-1">{{ . }}</span>
+                </a>
+            {{ end }}
+        </div>
+    </section>
+
+    <img src="{{ .Params.feature_img }}" class="w-100 img-fluid rounded my-2">
+    {{ .Content }}
+
+    <hr>
+
+    <section class="py-5 d-flex flex-column align-items-center">
+        <h6>Discuss this post on Twitter</h6>
+        <a href="https://twitter.com/intent/tweet?screen_name=vixrant&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @vixrant</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </section>
+</article>
+
+{{ end }}

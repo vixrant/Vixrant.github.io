@@ -1,10 +1,11 @@
 {{ define "main" }}
 
 <main class="container g-0 px-3 p-sm-5">
-    <section class="row my-5">
+
+    <section class="row my-5 py-5">
         <div class="col-12 col-lg-4 d-flex flex-column align-items-center">
             <img src="/images/face.jpg" class="rounded-circle mb-4" style="max-width: 12em; height: auto;">
-            <div class="d-flex flex-wrap justify-content-center">
+            <div class="d-flex flex-column align-items-center">
             {{ range .Site.Params.links }}
                 <a href="{{ .href }}" class="p-1">
                     <i class="{{ .icon }}"></i>
@@ -13,7 +14,8 @@
             {{ end }}
             </div>
         </div>
-        <div class="col-12 col-lg-8">
+
+        <div class="col-12 col-lg-8 mt-5 mt-lg-0">
             <h1 class="fw-900">hello! i'm vikrant</h1>
             <p>
                 I'm a undergrad student at DJ Sanghvi College of Engineering.
@@ -21,8 +23,12 @@
                 and Compiler Design. I'm currently applying to grad school for further studies.
                 <br><br>
                 For the first 3 years of my undergrad program I focused on software development - for
-                freelance, internships, college, and competitions. Consequently,
-                I'm a pretty good full stack developer.
+                freelance, internships, college, and competitions.
+                I've worked at 2 innovative start-ups, one where I build a chatbot using custom algorithms
+                in 2017 and one where I designed the distributed systems architecture for the company.
+                Consequently, I'm a pretty good full stack developer.
+                I've also worked at CSRE, IIT Bombay (before COVID-19 paused my work) and currently I'm working with a
+                company to make a programming language and compiler for their machinery.
                 <br><br>
                 I'm open to people to talk about software engineering and my fields of interest.
                 If you wish to talk you can shoot me an e-mail or message me on LinkedIn.
@@ -51,10 +57,10 @@
         {{ $activities := (where .Site.RegularPages "Section" "activities") }}
         {{ range $activities}}
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-sm-1">
                     <i>{{ .Date.Format "02-Jan-06" }}</i>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-sm-11 hugo-content">
                     {{ .Content }}
                 </div>
             </div>

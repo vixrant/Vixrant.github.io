@@ -1,11 +1,10 @@
 +++
 date = 2020-09-16T18:30:00Z
 feature_img = "/uploads/goran-ivos-t8lmin09-mo-unsplash.jpg"
-series = "Development Environment"
 tags = ["set-up", "mac"]
 title = "My MacOS development set-up checklist ✅"
-
 +++
+
 I recently decided to reinstall MacOS on my MacBook Air 2017 (yes, I know it's outdated) after the service centre was able to revive the motherboard which died unexpectedly. The purpose of the reinstall was to micromanage my development environment which was filled with unexpected soft-links, aliases, and binary files in random places.
 
 Looking at my old Catalina installation retrospectively, I realised that my development set-up required only 10 applications. With better management I could easily save space on my frail laptop. Below, I present these essential applications with the MacOS solutions for each of them.

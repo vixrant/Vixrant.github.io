@@ -49,7 +49,7 @@ params:
     text: Copyright © 2020 Vikrant Gajria
 
   navbar:
-    - text: Home 
+    - text: VGajria
       href: /
     - text: Blog
       href: /blog
