@@ -12,14 +12,6 @@ pygmentsCodefences: true
 pygmentsCodefencesGuessSyntax: true
 pygmentsStyle: vs
 
-markup:
-  highlight:
-    anchorLineNos: true
-    guessSyntax: true
-    lineNoStart: 1
-    lineNos: true
-    tabWidth: 4
-
 params:
   author:
     name: Vikrant Gajria
@@ -41,7 +33,7 @@ params:
       href: mailto:vikrantgajria@gmail.com
     - icon: fas fa-key
       name: Public key
-      href: /public-key.gpg
+      href: /public-key.txt
      
   footer:
     text: Copyright © 2020 Vikrant Gajria

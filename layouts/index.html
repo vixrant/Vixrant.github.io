@@ -5,13 +5,12 @@
     <section class="row my-5 py-5">
         <div class="col-12 col-lg-4 d-flex flex-column align-items-center">
             <img src="/images/face.jpg" class="rounded-circle mb-4" style="max-width: 12em; height: auto;">
-            <div class="d-flex flex-column align-items-center">
-            {{ range .Site.Params.links }}
-                <a href="{{ .href }}" class="m-1">
-                    <i class="{{ .icon }} mx-1"></i>
-                    <span>{{ .name }}</span>
+            <div>
+                {{ range .Site.Params.links }}
+                <a href="{{ .href }}">
+                    <i class="{{ .icon }} mx-1 "></i>
                 </a>
-            {{ end }}
+                {{ end }}
             </div>
         </div>
 
