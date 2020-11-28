@@ -1,11 +1,18 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
-/* Bootstrap overrides */
+/* Bootstrap Overrides */
 
-:root {
-    --bs-light: black !important;
-}
+$blue: #3c40c6; 
+
+$primary: $blue;
+$light: #f1f2f6;
+
+/* Import Bootstrap */
+
+@import './bootstrap/scss/bootstrap.scss';
+
+/* Other overrides */
 
 body {
     font-family: 'Barlow', sans-serif;
@@ -19,11 +26,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    color: inherit;
-}
+    color: inherit !important;
 
-a:hover {
-    color: #3c40c6;
+    :hover {
+        color: $primary;
+    }
 }
 
 ::selection {
@@ -35,15 +42,9 @@ a:hover {
     font-weight: 900;
 }
 
-/* Colors */
-
 .bg-hover-pink:hover {
     color: white;
     background-color: #f53b57;
-}
-
-.border-blue {
-    border: solid 4px rgba(15, 188, 249, 1.0);
 }
 
 .hugo-content img {
