@@ -26,7 +26,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}"
     identifier_field: "date"
     fields:
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Activity Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "projects"
     label: "Projects"
