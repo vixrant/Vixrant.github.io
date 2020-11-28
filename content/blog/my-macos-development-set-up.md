@@ -1,25 +1,27 @@
-+++
-date = 2020-09-16T18:30:00Z
-feature_img = "/uploads/goran-ivos-t8lmin09-mo-unsplash.jpg"
-tags = ["set-up", "mac"]
-title = "My MacOS development set-up checklist ✅"
-+++
-
+---
+title: My MacOS development set-up checklist
+date: 2020-09-16T18:30:00.000Z
+feature_img: /uploads/goran-ivos-t8lmin09-mo-unsplash.jpg
+series: Devenv
+tags:
+  - set-up
+  - mac
+---
 I recently decided to reinstall MacOS on my MacBook Air 2017 (yes, I know it's outdated) after the service centre was able to revive the motherboard which died unexpectedly. The purpose of the reinstall was to micromanage my development environment which was filled with unexpected soft-links, aliases, and binary files in random places.
 
 Looking at my old Catalina installation retrospectively, I realised that my development set-up required only 10 applications. With better management I could easily save space on my frail laptop. Below, I present these essential applications with the MacOS solutions for each of them.
 
 # The Checklist
 
- 1. Basic tools like git and cc
- 2. Package manager
- 3. Terminal emulator
- 4. Shell program
- 5. A good font for the shell
- 6. Dot files management
- 7. Web browser
- 8. Privacy and keys
- 9. The best text editor
+1. Basic tools like git and cc
+2. Package manager
+3. Terminal emulator
+4. Shell program
+5. A good font for the shell
+6. Dot files management
+7. Web browser
+8. Privacy and keys
+9. The best text editor
 10. The popular text editor
 
 # MacOS Solutions
@@ -30,13 +32,13 @@ If you aren't a MacOS/ iOS developer you can make do without the hefty Xcode. I 
 
 I tried `xcode-select --install` but it didn't work. So I download the tools from Apple's developer centre.
 
-[https://developer.apple.com/download/more/](https://developer.apple.com/download/more/ "https://developer.apple.com/download/more/")
+[https://developer.apple.com/download/more/](https://developer.apple.com/download/more/ "https\://developer.apple.com/download/more/")
 
 ## 2. Homebrew
 
 The missing package manager for MacOS is a must for any developer. I stopped installing applications from .dmg files and I'd rather get the cask through brew.
 
-[https://brew.sh](https://brew.sh "https://brew.sh")
+[https://brew.sh](https://brew.sh "https\://brew.sh")
 
 I also install [homebrew-rmtree](https://github.com/beeftornado/homebrew-rmtree) for good measures. I hate orphan packages.
 
@@ -57,13 +59,15 @@ I spend most of my time in the terminal. I have so many configurations and rules
 
 You can find my iterm2 profile [here](https://gist.github.com/vixrant/1ead9e02bb4cb915fd31c06daa3cc804 "iterm2 profile").
 
-`brew cask install iterm2`
+```sh
+brew cask install iterm2
+```
 
 ## 4. Oh my ZSH!
 
 The name is very accurate. ZSH is far better than Bash for daily use. Oh-my-zsh will do all the set-up for you, so you can focus on setting the right colour theme and such.
 
-[https://github.com/ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh "https://github.com/ohmyzsh/ohmyzsh")
+[https://github.com/ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh "https\://github.com/ohmyzsh/ohmyzsh")
 
 Some additional plugins to install:
 
@@ -79,9 +83,10 @@ Some additional plugins to install:
 
 A good terminal and a good shell, together with a good font. Aesthetics matter a lot when I'm coding. Fira Code is simple, with good ligatures support for easier reading. This is definitely a subjective taste so you can install anything else.
 
-`brew tap homebrew/cask-fonts`
-
-`brew cask install font-fira-code`
+```sh
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code
+```
 
 ## 6. YADM
 
@@ -89,7 +94,9 @@ A good terminal and a good shell, together with a good font. Aesthetics matter a
 
 However, I've never had a Dotfiles manager before. YADM is my first and only choice for a Dotfiles manager. It's a wrapper over Git so it's extremely hackable. I don't need to learn any new commands, I just do `yadm add -u -a , yadm commit -m "Text"`, `yadm push`. It's simple and intuitive for any git user.
 
-`brew install yadm`
+```sh
+brew install yadm
+```
 
 ## 7. Firefox
 
@@ -108,21 +115,45 @@ For the most part, I use Safari because of its simpler and faster UI. However fo
 
 Admittedly, Mozilla has introduced lots of improvements in Firefox and as time passes, it's becoming more pleasurable to use Firefox. Adding to this, when I logged into my Firefox account, I was impressed by how well Mozilla has handled syncing of configuration. It works like Magic.
 
-`brew cask install firefox`
+```sh
+brew cask install firefox
+```
 
 ## 8. GPG
 
 I use GPG for signing my commits in git. It's pretty straightforward. You can read the entire guide [here](https://dev.to/wes/how2-using-gpg-on-macos-without-gpgtools-428f).
 
-`brew install gnupg pinentry-mac`
+```sh
+brew install gnupg pinentry-mac
+```
 
-## 9. Emacs + Doom Emacs
+## 9. Vim
 
 > The best editor
 
-I shifted from Sublime to Atom to VSCode+Vim to VSCode+Emacs. I fell in love with the scriptability and performance of Emacs, specifically Doom Emacs. I used Vim for small files before but I can use Emacs ubiquitously - big projects to single files. It's fast and the key bindings of Doom Emacs are same as Vim in editing mode. And personally, I prefer Emacs Lisp over VimScript.
+My journey has been from
 
-`brew cask install emacs`
+Sublime -> Atom -> Vim -> VSCode + Vim -> VSCode + Emacs -> Emacs -> Vim
+
+Sublime was great but not as feature-rich as I wanted it to be. Atom was too heavy for my poor laptop. VSCode was an amazing balance between features of Atom and performance of Sublime, but later as I added more plugins, it got much heavier.
+
+I decided to learn Emacs and configure it using Doom. At first, it was amazing. But with the feature-creep and confusing controls (I used Evil bindings), it was a headache to configure. In the end, I settled for a minimal configuration of Macvim.
+
+And my laptop loves it as much as I do. I get 3-4 hours more battery life. It's much faster than Emacs and VSCode. I use it primarily for C++, Go, and Python. I'm yet to use Vim for web development.
+
+For autocompletion, I avoid YouCompleteMe. It's archaic, too heavy and difficult to set-up. Instead, I use the fancy LSP server, same as VSCode. I've set-up Coc.nvim to do this, and most of my projects are easy to configure. For C++, clangd can be set up using CMake. For python, I do no configuration at all. It just works.
+
+```sh
+brew cask install macvim
+```
+
+I've also configured the terminal version to work in vi-compatible mode (no GUI) for quick edits.
+
+```
+alias vim="mvim -v"
+```
+
+A more detailed explaination of my Vim configuration will be the subject for a future blogpost.
 
 ## 10. VSCode
 
