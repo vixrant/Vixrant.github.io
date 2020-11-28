@@ -7,8 +7,8 @@
             <img src="/images/face.jpg" class="rounded-circle mb-4" style="max-width: 12em; height: auto;">
             <div class="d-flex flex-column align-items-center">
             {{ range .Site.Params.links }}
-                <a href="{{ .href }}" class="p-1">
-                    <i class="{{ .icon }}"></i>
+                <a href="{{ .href }}" class="m-1">
+                    <i class="{{ .icon }} mx-1"></i>
                     <span>{{ .name }}</span>
                 </a>
             {{ end }}
@@ -57,10 +57,10 @@
         {{ $activities := (where .Site.RegularPages "Section" "activities") }}
         {{ range $activities}}
             <div class="row">
-                <div class="col-12 col-sm-1">
+                <div class="col-12 col-sm-3">
                     <i>{{ .Date.Format "02-Jan-06" }}</i>
                 </div>
-                <div class="col-12 col-sm-11 hugo-content">
+                <div class="col-12 col-sm-9 hugo-content">
                     {{ .Content }}
                 </div>
             </div>

@@ -4,6 +4,8 @@ title: Vikrant Gajria
 
 googleAnalytics: UA-117154240-1
 
+pygmentsUseClasses: false
+
 taxonomies:
   tag: tags
   series: series
