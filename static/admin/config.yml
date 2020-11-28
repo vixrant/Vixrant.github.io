@@ -15,9 +15,9 @@ collections:
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "feature_img", widget: "image"}
-      - {label: "Series", name: "series", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Featured Image", name: "feature_img", widget: "image", required: false}
+      - {label: "Series", name: "series", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "activity"
     label: "Activity"
