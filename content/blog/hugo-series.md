@@ -1,13 +1,12 @@
 ---
 title: Implementing post series in Hugo
 date: 2020-05-30
-feature_img: /uploads/hugo-series.svg 
-tags:
-- hugo
-- tutorial
+feature_img: /uploads/hugo-series.svg
 series: How to Hugo
+tags:
+  - hugo
+  - tutorial
 ---
-
 Want to write a series of posts, without linking them to each other manually? dev.to has this feature. With Hugo, we can implement it with some programming. In this post I'll explain how to add series to your Hugo blog.
 
 ## Taxonomies
@@ -123,4 +122,4 @@ Now you can use the list of pages however you like!
 
 There you go! Happy posting!
 
-If you wish to see how I've implemented series on this website, you can checkout the [repository here](https://github.com/vixrant/personal-website). Theme credits - [Hugo UILite](https://themes.gohugo.io/hugo-uilite/).
+If you wish to see how I've implemented series on this website, you can checkout the [repository here](https://github.com/vixrant/personal-website).
