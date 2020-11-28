@@ -2,7 +2,7 @@
 title: My MacOS development set-up checklist
 date: 2020-09-16T18:30:00.000Z
 feature_img: /uploads/goran-ivos-t8lmin09-mo-unsplash.jpg
-series: Devenv
+series: ""
 tags:
   - set-up
   - mac
