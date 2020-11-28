@@ -4,9 +4,6 @@ title: Vikrant Gajria
 
 googleAnalytics: UA-117154240-1
 
-pygmentsCodeFences: true
-pygmentsUseClasses: true
-
 taxonomies:
   tag: tags
   series: series
@@ -22,7 +19,7 @@ markup:
     lineNos: false
     lineNumbersInTable: true
     noClasses: true
-    style: pastie
+    style: murphy
     tabWidth: 4
 
 params:
