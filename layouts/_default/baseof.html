@@ -11,15 +11,15 @@
     {{ end }}
   </title>
   
-  {{ partial "header" . }}
-  {{ partial "seo_schema.html" . }}
+  {{ partial "base/header" . }}
+  {{ partial "base/seo_schema" . }}
 </head>
 <body class="fadeIn">
   {{ block "body" . }}
-    {{ partial "navbar" . }}
+    {{ partial "base/navbar" . }}
     {{ block "main" . }}{{ end }}
   {{ end }}
 
-  {{ partial "scripts" . }}
+  {{ partial "base/scripts" . }}
 </body>
 </html>
