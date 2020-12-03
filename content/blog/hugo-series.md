@@ -7,7 +7,7 @@ tags:
   - hugo
   - tutorial
 ---
-Want to write a series of posts, without linking them to each other manually? dev.to has this feature. With Hugo, we can implement it with some programming. In this post I'll explain how to add series to your Hugo blog.
+Want to write a series of posts, without linking them to each other manually? dev.to has this feature. With Hugo, we can implement it with little programming. In this post I'll explain how to add series to your Hugo blog.
 
 ## Taxonomies
 
@@ -28,7 +28,7 @@ You may have used tags taxonomy in hugo before. The key `tags` is called the tax
 However, what many people don't realise, is that:
 
 1. You can define custom taxonomies in your config.
-2. You can use strings instead of values in taxonomy values!
+2. You can use strings taxonomy values, and then use these strings to aggregate your posts in a series.
 
 So, we are gonna define a new taxonomy so that your frontmatter is gonna look like this:
 
@@ -57,7 +57,7 @@ taxonomies:
   tag: tags
 ```
 
-The format is `sigular word: plural word` in yaml. In template lookup, it can look for the singular word (`layouts/taxonomy/tag.html`) as well as the plural word (`layouts/tags/list.html`). This won't be a problem here because plural of series is well, series 😛
+The format is `sigular word: plural word` in yaml. In template lookup, it can look for the singular word (`layouts/taxonomy/tag.html`) as well as the plural word (`layouts/tags/list.html`). This won't be a problem here because plural of series is well, series :p
 
 Let's add a new series taxonomy as so:
 
@@ -85,11 +85,11 @@ There are a few themes out there which may use this taxonomy, but your theme pro
 
 ### List page
 
-Before we start, you can define a custom list page for your new taxonomy. The easiest way is to define a new `layouts/taxonomy/series.html` or a `layouts/series/list.html` template. Of course, [Hugo will use the default list template](https://gohugo.io/templates/lookup-order/) if none of these are defined. I do, however, suggest defining a custom list template for adding some extra jazz to your post series, so that your page doesn't look the same as a tags page. It's completely up to you. My website does define a separate series and a posts page.
+Before we start, you can define a custom list page for your new taxonomy. The easiest way is to define a new `layouts/taxonomy/series.html` or a `layouts/series/list.html` template. Of course, [Hugo will use the default list template](https://gohugo.io/templates/lookup-order/) if none of these are defined. I do, however, suggest defining a custom list template for adding some extra jazz to your post series, so that your page doesn't look the same as a tags page. It's completely up to your discretion.
 
 ### Adding series to your blog single template
 
-If you ever want to refer to the series a post belongs to, in the `layouts/blog/single.html` or whichever template is used for your blog posts content, you can use `.Params.series` to get the name of your post series in string format. You will have to define hrefs yourself.
+You can refer to the series a post belongs to, in the `layouts/blog/single.html` or whichever template is used for your blog posts content, you can use `.Params.series` to get the name of your post series as a string from the post's frontmatter params. However, you will have to define links/ hrefs yourself.
 
 Here, I define which series a post was added to, and link the viewer to the list page for that series:
 
@@ -101,16 +101,16 @@ Here, I define which series a post was added to, and link the viewer to the list
 
 In the above example, I use `urlize` filter to slugify the string (that is, lowercase and replace spaces with hyphens). You can also assign it to a variable with `{{ $series = .Params.series }}`, or use a `with` block for simplicity.
 
-How do we link the user to all other posts in the series? This one's a little tricky, since `.Params.series` only gave us a string, not a [Taxonomy struct](https://gohugo.io/variables/taxonomy/) which will have some implementation methods. We will have to extract the Taxonomy struct from the `map` in the site variable, `.Site` as follows:
+How do we link the user to all other posts in the series? This one's a little tricky, since `.Params.series` only gave us a string, not a [Taxonomy struct](https://gohugo.io/variables/taxonomy/) which has implementation methods. We will have to extract the Taxonomy struct from the `map` in the site variable, `.Site` as follows:
 
 ```go-html-template
 {{ $key := .Params.series | urlize }}
 {{ $series := index .Site.Taxonomies.series $key }}
 ```
 
-`index` function is used for extracting a value from a `map` or an `array`, given its key as the second argument. `.Site.Taxonomies` returns a map of taxonomies terms to taxonomy variables.
+`index` function is used for extracting a value from a `map` or an `array`, given its key as the second argument. `.Site.Taxonomies` is a map of taxonomy terms to taxonomy variables.
 
-Now you can use the list of pages however you like!
+Now you can use the list of pages belonging to your series however you like!
 
 ```go-html-template
 {{ range $series.Pages }}
@@ -121,5 +121,7 @@ Now you can use the list of pages however you like!
 ```
 
 There you go! Happy posting!
+
+\-----
 
 If you wish to see how I've implemented series on this website, you can checkout the [repository here](https://github.com/vixrant/personal-website).
