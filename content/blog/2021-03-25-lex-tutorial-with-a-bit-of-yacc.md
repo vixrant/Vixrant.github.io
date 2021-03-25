@@ -10,7 +10,7 @@ tags:
 >
 > You can refer to the following material:
 
-[\[Code]](https://github.com/vixrant/lex-tutorial-talk)[\[Slides]](https://github.com/vixrant/lex-tutorial-talk/raw/master/SLIDES.pdf)[\[LaTeX]](https://github.com/vixrant/lex-tutorial-talk/blob/master/doc.tex)
+\[[Code\]](https://github.com/vixrant/lex-tutorial-talk) \[[Slides\]](https://github.com/vixrant/lex-tutorial-talk/raw/master/SLIDES.pdf) \[[LaTeX\]](https://github.com/vixrant/lex-tutorial-talk/blob/master/doc.tex)
 
 # Lexical Analysis
 
