@@ -1,6 +1,7 @@
 ---
 title: Lex Tutorial, with a bit of Yacc
 date: 2021-03-25T07:21:06.088Z
+feature_img: /uploads/dfa.jpg
 tags:
   - tutorial
   - c
