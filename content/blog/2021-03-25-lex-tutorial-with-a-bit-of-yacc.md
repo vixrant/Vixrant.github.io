@@ -9,10 +9,9 @@ tags:
 >
 > You can refer to the following material:
 >
-> [[Code]](https://github.com/vixrant/lex-tutorial-talk)
-> [[Slides]](https://github.com/vixrant/lex-tutorial-talk/raw/master/SLIDES.pdf)
-> [[LaTeX]](https://github.com/vixrant/lex-tutorial-talk/blob/master/doc.tex)
->
+> [\[Code]](https://github.com/vixrant/lex-tutorial-talk)
+> [\[Slides]](https://github.com/vixrant/lex-tutorial-talk/raw/master/SLIDES.pdf)
+> [\[LaTeX]](https://github.com/vixrant/lex-tutorial-talk/blob/master/doc.tex)
 
 # Lexical Analysis
 
@@ -58,7 +57,7 @@ It is not a framework or a library, it writes the code for you
 
 ## Example 1
 
-```
+```c
 %%
 
 [0-9]           printf("Digit: %s \n", yytext);
@@ -80,26 +79,26 @@ matched by regex.
 
 Generate code using:
 
-```
+```shell
         flex <filename>
         gcc -lfl lex.yy.c -o <outputname>
 ```
 
 Run interactive mode:
 
-```
+```shell
         ./<outputname>
 ```
 
 Pass in a file's text:
 
-```
+```shell
         cat <file> | ./<outputname>
 ```
 
 ## Example 2
 
-```
+```c
 DIGIT    [0-9]
 ID       [a-zA-Z][a-zA-Z0-9]*
 
@@ -116,7 +115,7 @@ declarations (DIGIT, ID), and other configurations.
 
 ## Example 3
 
-```{.c
+```c
 ... declarations
 
 %%
@@ -152,7 +151,7 @@ change the return type by modifying YYDECL macro (advanced).
 
 ## Code structure
 
-```{basicstyle="\\tiny"}
+```c
 [
 %{
 ... user code for header files and other config
@@ -187,7 +186,7 @@ Yacc and its implementations also uses same structure!
 
 **Assembly-like calculator**
 
-```{basicstyle="\\small"}
+```tcl
 ADD 5;
 PRINT;
 
@@ -223,7 +222,7 @@ YYSTYPE macro and is usually defined using Yacc/ Bison.
 
 **Calculator with infix syntax**
 
-```
+```c
     1 + 2
     3.0 / 2
     2 * (3.1427 / 3)
@@ -232,7 +231,7 @@ YYSTYPE macro and is usually defined using Yacc/ Bison.
 
 is based on
 
-```
+```coffeescript
     E -> E + E | E - E | T
     T -> T * F | T / F | F
     F -> ( E ) | num | id
