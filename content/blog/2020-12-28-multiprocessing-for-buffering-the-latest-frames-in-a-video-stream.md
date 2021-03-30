@@ -13,7 +13,7 @@ When I implement a complex computation on a video in a single python process, I'
 
 ## Premise
 
-However, in our bachelor's final year project, I want two computations to run in parallel - one is an estimation model for hand poses of in a video frame, and the other is a classification model that classifies a buffer of 30 hand-poses. The estimation model runs fast enough - at 15 frames per second on a Macbook Air 2017 with i5 5th generation CPU and no GPU. We use Mediapipe's solutions for this model, so Google overlords have optimised it really well for on-device inference.
+I want two computations to run in parallel - one is an estimation model for hand poses of in a video frame, and the other is a classification model that classifies a buffer of 30 hand-poses. The estimation model runs fast enough - at 15 frames per second on a Macbook Air 2017 with i5 5th generation CPU and no GPU. We use Mediapipe's solutions for this model, so Google overlords have optimised it really well for on-device inference.
 
 The other model is our own - a spatio-temporal classification model that takes as input an array of 30 hand frames, each hand frame contains 21 hand points, each hand point is an X, Y, Z tuple (the input shape is 30x21x3). This model takes a lot of time for its classification. In the mean time, I do not want the estimation model to wait for the classification model. If it does, the entire project is gonna slow down.
 
@@ -65,4 +65,3 @@ What's happening here?
 (TODO)
 
 ## Python Code
-
