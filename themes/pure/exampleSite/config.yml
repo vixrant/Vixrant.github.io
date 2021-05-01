@@ -1,15 +1,14 @@
-baseURL: https://www.vgajria.com/
+baseURL: https://example.com/
 theme: pure
-title: Vikrant Gajria's Blog
-copyright: This work is licensed under a Creative Commons Attribution 4.0 International License.
-defaultContentLanguage: en
+title: Pure theme for Hugo
+copyright: CC BY 4.0 CN
+defaultContentLanguage: en  # en/zh/...
 footnoteReturnLinkContents: ↩
 hasCJKLanguage: true
-paginate: 10
+paginate: 7
 enableEmoji: true
 PygmentsCodeFences: false
-googleAnalytics: UA-117154240-1
-
+googleAnalytics: ""      # UA-XXXXXXXX-X 
 permalinks:
   posts: /:year/:month/:filename/
 
@@ -17,7 +16,6 @@ taxonomies:
     category : categories
     tag : tags
     series : series
-
 outputFormats:          # use for search. recommend not to modify 
   SearchIndex:
     mediaType: "application/json"
@@ -27,7 +25,6 @@ outputFormats:          # use for search. recommend not to modify
 
 outputs:
     home: ["HTML","RSS","SearchIndex"]  # recommend not to modify
-
 # sitemap
 sitemap:
   changefreq: monthly
@@ -60,24 +57,18 @@ menu:
       url: /tags/
       weight: 4
 
-    # - identifier: about
-    #   name: About
-    #   title: About
-    #   url: /about/
-    #   weight: 5
-
-    - identifier: resume
-      name: Resume
-      title: Resume
-      url: https://goo.gl/8YszZv
-      weight: 6
+    - identifier: about
+      name: About
+      title: About
+      url: /about/
+      weight: 5
 
 
 params:
   since: 2017
   dateFormatToUse: "2006-01-02"
-  enablePostCopyright: false
-  copyright_link: http://creativecommons.org/licenses/by/4.0/
+  enablePostCopyright: true
+  copyright_link: http://creativecommons.org/licenses/by/4.0/deed.zh
   # the directory under content folder that you want to render
   mainSections: ["posts"]
   # Enable/Disable menu icons
@@ -85,6 +76,7 @@ params:
   enableMathJax: true #Enable mathjax support, to use mathematical notations
   highlightjs:
     langs: ["python", "javascript"] # refer to http://staticfile.org/, search highlight.js, already have highlight.min.js
+
   tag_cloud:
     min: 8
     max: 20
@@ -92,9 +84,8 @@ params:
   # put custom.css in $hugo_root_dir/static/
   # customCSS: css/custom.css
 
-  # https://fontawesome.com/v3.2.1/icons/
   menuIcons:
-    enable: true 
+    enable: true  # 是否启用导航菜单图标
     home: icon-home-fill
     archives: icon-archives-fill
     categories: icon-folder
@@ -103,22 +94,24 @@ params:
     books: icon-book-fill
     links: icon-friendship
     about: icon-cup-fill
-    resume: icon-file
 
   # profile
   profile:
     enabled: true # Whether to show profile bar
-    avatar: images/face.jpg
-    author: Vikrant Gajria
-    author_title: PL developer
-    author_description: MS in CS student at Purdue
-    location: Mumbai, India
-    follow: https://github.com/vixrant
+    avatar: avatar.png
+    gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
+    author: xiaoheiAh
+    author_title: author title
+    author_description: Good Good Study, Day Day Up~
+    location: Shanghai, China
+    follow: https://github.com/xiaoheiAh
     # Social Links
     social:
       links:
-        github: https://github.com/vixrant
-        twitter: https://twitter.com/vixrant
+        github: https://github.com/xiaoheiAh
+        # weibo: http://weibo.com/{yourid}
+        # twitter: https://twitter.com/
+        # facebook: /
         rss: /index.xml
       link_tooltip: false # enable the social link tooltip, options: true, false
   # Site
@@ -135,9 +128,9 @@ params:
   # Share
   # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
   share:
-    enable: false
-    sites: facebook,twitter,linkedin
-    mobile_sites: facebook,twitter,linkedin
+    enable: true # 是否启用分享
+    sites: weibo,qq,wechat,facebook,twitter # PC端显示的分享图标
+    mobile_sites: weibo,qq,qzone # 移动端显示的分享图标
 
   # Comment
   comment:

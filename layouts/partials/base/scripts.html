@@ -1,8 +1,0 @@
-{{ $bootstrapjs := resources.Get "bootstrap/dist/js/bootstrap.bundle.min.js" }}
-<!-- Bootstrap -->
-<script src="{{ $bootstrapjs.Permalink }}"></script>
-
-<!-- Font awesome -->
-<script src="https://kit.fontawesome.com/b8cf090678.js" crossorigin="anonymous"></script>
-
-{{ template "_internal/google_analytics.html" . }}
