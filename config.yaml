@@ -1,10 +1,9 @@
-baseURL: https://www.vgajria.com/
+baseURL: https://vgajria.com/
 theme: pure
 title: Vikrant Gajria's Blog
 copyright: This work is licensed under a Creative Commons Attribution 4.0 International License.
 defaultContentLanguage: en
 footnoteReturnLinkContents: ↩
-hasCJKLanguage: true
 paginate: 10
 enableEmoji: true
 PygmentsCodeFences: false
@@ -110,7 +109,7 @@ params:
     enabled: true # Whether to show profile bar
     avatar: images/face.jpg
     author: Vikrant Gajria
-    author_title: PL developer
+    author_title: Compiler Engineer
     author_description: MS in CS student at Purdue
     location: Mumbai, India
     follow: https://github.com/vixrant
@@ -142,23 +141,23 @@ params:
   # Comment
   comment:
     type:  # type disqus/gitalk/valine 启用哪种评论系统
-    disqus: your_disqus_name # enter disqus shortname here
+    # disqus: your_disqus_name # enter disqus shortname here
     gitalk: # gitalk. https://gitalk.github.io/
       owner: #必须. GitHub repository 所有者，可以是个人或者组织。
       admin: #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
       repo:  #必须. GitHub repository.
       ClientID: #必须. GitHub Application Client ID.
       ClientSecret: #必须. GitHub Application Client Secret.
-    valine: # Valine. https://valine.js.org
-      appid: # your leancloud application appid
-      appkey: # your leancloud application appkey
-      notify: # mail notifier , https://github.com/xCss/Valine/wiki
-      verify: # Verification code
-      placeholder: enjoy~ # comment box placeholder
-      avatar: mm # gravatar style
-      meta: nick,mail # custom comment header
-      pageSize: 10 # pagination size
-      visitor: false # Article reading statistic https://valine.js.org/visitor.html
+    # valine: # Valine. https://valine.js.org
+    #   appid: # your leancloud application appid
+    #   appkey: # your leancloud application appkey
+    #   notify: # mail notifier , https://github.com/xCss/Valine/wiki
+    #   verify: # Verification code
+    #   placeholder: enjoy~ # comment box placeholder
+    #   avatar: mm # gravatar style
+    #   meta: nick,mail # custom comment header
+    #   pageSize: 10 # pagination size
+    #   visitor: false # Article reading statistic https://valine.js.org/visitor.html
 
   # Donate
   donate:
@@ -189,7 +188,7 @@ params:
 
   # config
   config:
-    skin: theme-black # theme color default is white. other type [theme-black,theme-blue,theme-green,theme-purple]
+    skin: theme-blue # theme color default is white. other type [theme-black,theme-blue,theme-green,theme-purple]
     layout: main-center # main-left main-center main-right
     excerpt_link: Read More
     toc: true
