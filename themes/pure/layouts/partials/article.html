@@ -31,5 +31,7 @@
   {{- partial "post/comment.html" . }}
   {{- end }}
 </div>
-{{- partial "post/nav.html" . }}
+{{- if not (eq .Params.nav false)  }}
+  {{- partial "post/nav.html" . }}
+{{- end }}
 {{- partial "post/donate.html" . }}
