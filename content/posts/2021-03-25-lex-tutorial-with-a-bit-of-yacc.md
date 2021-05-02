@@ -4,7 +4,6 @@ date: 2021-03-25T07:21:06.088Z
 tags:
   - tutorial
   - c
-  - java
 ---
 
 ![Holy bison](/uploads/the_gnu_logo.png)

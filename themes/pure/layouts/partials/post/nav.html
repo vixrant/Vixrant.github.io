@@ -31,12 +31,6 @@
         {{- end }}
         {{- $donate := .Site.Params.donate}}
         {{- with $donate.enable }}
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal"
-            data-target="#donateModal"><span>{{ T "donate_button" }}</span></button>
-        <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
-          <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
-        </div> -->
         {{- end }}
         {{- $share := .Site.Params.share}}
         <div class="bar-right">

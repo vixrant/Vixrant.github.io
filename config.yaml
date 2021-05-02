@@ -120,6 +120,7 @@ params:
         twitter: https://twitter.com/vixrant
         rss: /index.xml
       link_tooltip: false # enable the social link tooltip, options: true, false
+      
   # Site
   site:
     logo:
@@ -162,14 +163,6 @@ params:
   # Donate
   donate:
     enable: false
-    # 微信打赏
-    wechatpay:
-      qrcode: donate/wechatpayimg.png
-      title: 微信支付
-    # 支付宝打赏
-    alipay:
-      qrcode: donate/alipayimg.png
-      title: 支付宝
 
   # PV
   pv:
@@ -177,8 +170,6 @@ params:
       enable: false # 不蒜子统计
     leancloud:
       enable: false # leancloud统计
-      app_id: # leancloud <AppID>
-      app_key: # leancloud <AppKey>
 
   # wordcount
   postCount:

@@ -8744,9 +8744,9 @@ body.okayNav-loaded {
     padding: 6px 20px;
   }
 
-  .bar .pager li a span {
+  /* .bar .pager li a span {
     display: none;
-  }
+  } */
 
   .footer .copyright {
     display: none;
@@ -8979,6 +8979,7 @@ body.okayNav-loaded {
   .header .search {
     width: 90%;
     float: right;
+    padding-left: 16px;
   }
 
   .header .profile-block {
