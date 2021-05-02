@@ -6188,13 +6188,13 @@ body.no-sidebar .sidebar {
 .bar .pager .next > a,
 .bar .pager .next > span {
   float: none;
+  z-index: 1000;
 }
 
 .bar.bar-footer {
-  position: fixed;
+  position: relative;
   background-color: #fff;
-  bottom: 0px;
-  width: -webkit-fill-available;
+  bottom: -15px;
 }
 
 .bar.bar-footer:before {

@@ -4,7 +4,7 @@ title: Vikrant Gajria's Blog
 copyright: This work is licensed under a Creative Commons Attribution 4.0 International License.
 defaultContentLanguage: en
 footnoteReturnLinkContents: ↩
-paginate: 100
+paginate: 25
 enableEmoji: true
 PygmentsCodeFences: false
 googleAnalytics: UA-117154240-1
