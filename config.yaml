@@ -4,7 +4,7 @@ title: Vikrant Gajria's Blog
 copyright: This work is licensed under a Creative Commons Attribution 4.0 International License.
 defaultContentLanguage: en
 footnoteReturnLinkContents: ↩
-paginate: 10
+paginate: 100
 enableEmoji: true
 PygmentsCodeFences: false
 googleAnalytics: UA-117154240-1
@@ -59,15 +59,15 @@ menu:
       url: /tags/
       weight: 4
 
-    # - identifier: about
-    #   name: About
-    #   title: About
-    #   url: /about/
-    #   weight: 5
+    - identifier: about
+      name: About
+      title: About
+      url: /about/
+      weight: 2
 
     - identifier: resume
       name: Resume
-      title: Resume
+      title: Résumé
       url: https://goo.gl/8YszZv
       weight: 6
 

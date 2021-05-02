@@ -39,25 +39,6 @@ $(function() {
   //   modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
   // });
 
-  // sticky
-  $('[data-stick-bottom]').keepInView({
-    fixed: false,
-    parentClass: "has-sticky",
-    customClass: "sticky",
-    trigger: 'bottom',
-    zindex: 42,
-    edgeOffset: 0
-  });
-  
-  $('[data-stick-top]').keepInView({
-    fixed: true,
-    parentClass: "has-sticky",
-    customClass: "sticky",
-    trigger: 'top',
-    zindex: 42,
-    edgeOffset: 0
-  });
-
   // menu auto highlight
   var menuHighlight = $("ul.main-nav").hasClass('menu-highlight');
   if (menuHighlight) {

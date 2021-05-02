@@ -1,15 +1,15 @@
-<nav class="bar bar-footer clearfix" data-stick-bottom>
+<nav class="bar bar-footer clearfix">
     <div class="bar-inner">
-        {{- if (or (.Prev) (.Next)) }}
+        {{- if (or (.PrevInSection) (.NextInSection)) }}
         <ul class="pager pull-left">
-            {{- with .Prev}}
+            {{- with .PrevInSection}}
             <li class="prev">
                 <a href="{{- .Permalink }}" title="{{- .Title }}"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;{{T "nav_older" }}</span></a>
             </li>
             {{- end }}
-            {{- with .Next }}
+            {{- with .NextInSection }}
             <li class="next">
                 <a href="{{- .Permalink }}"
                     title="{{- .Title }}"><span>{{T "nav_newer" }}&nbsp;&nbsp;</span><i
@@ -28,9 +28,6 @@
             </li>
             {{- end }}
         </ul>
-        {{- end }}
-        {{- $donate := .Site.Params.donate}}
-        {{- with $donate.enable }}
         {{- end }}
         {{- $share := .Site.Params.share}}
         <div class="bar-right">

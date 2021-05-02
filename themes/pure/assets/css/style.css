@@ -6191,9 +6191,10 @@ body.no-sidebar .sidebar {
 }
 
 .bar.bar-footer {
-  position: relative;
+  position: fixed;
   background-color: #fff;
-  bottom: -15px;
+  bottom: 0px;
+  width: -webkit-fill-available;
 }
 
 .bar.bar-footer:before {
