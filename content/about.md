@@ -1,6 +1,7 @@
 ---
 title: Hello!
 date: 2021-05-02
+nav: false
 ---
 
 I'm Vikrant Gajria, software engineer with interest in programming languages and compiler development. I have 4 years of full-stack development experience, since I started with web development in the first year of my undergraduate program in 2017. I also have 1 year of compiler design experience since 2020. I'm more inclined towards compiler design because of the interesting challenges, along with the fundamental importance of this field.
