@@ -128,9 +128,9 @@ params:
       width: 40
       height: 40
       url: favicon.ico
-    title: Hugo # 页面title
+    title: Vikrant Gajria
     favicon: favicon.ico
-    board: <p>enjoy~</p> # 公告牌
+    board: <p>Have a question? Mail me at firstlast at gmail dot com</p> 
 
   # Share
   # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
