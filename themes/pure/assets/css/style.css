@@ -7447,8 +7447,8 @@ body.okayNav-loaded {
   background: linear-gradient(to right, #0062c5 0%, #0073e6 80%, #0073e6 100%);
 
   /* Override */
-  background-color: #7f53ac;
-  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 }
 
 .theme-green .header {
@@ -9106,8 +9106,8 @@ body.okayNav-loaded {
     );
 
     /* Override */
-    background-color: #7f53ac;
-    background-image: linear-gradient(255deg, #7f53ac 0%, #647dee 74%);
+    background-color: #0cbaba;
+    background-image: linear-gradient(255deg, #0cbaba 0%, #380036 74%);
   }
 
   .theme-green #main-navbar {
