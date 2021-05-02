@@ -7445,6 +7445,10 @@ body.okayNav-loaded {
     to(#0073e6)
   );
   background: linear-gradient(to right, #0062c5 0%, #0073e6 80%, #0073e6 100%);
+
+  /* Overwrite */
+  background-color: #4834d4;
+  background-image: linear-gradient(315deg, #4834d4 0%, #0c0c0c 74%);
 }
 
 .theme-green .header {
