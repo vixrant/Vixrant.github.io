@@ -130,7 +130,7 @@ params:
       url: favicon.ico
     title: Vikrant Gajria
     favicon: favicon.ico
-    board: <p>Have a question? Mail me at firstlast at gmail dot com</p> 
+    board: <p>Have a question? Mail me at <br> firstlast at gmail dot com</p> 
 
   # Share
   # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
