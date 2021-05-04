@@ -2,7 +2,7 @@
 title: Participating solo in a hackathon
 date: 2018-10-07
 categories:
-- experience
+- experiences
 tags:
 - hackathon
 ---

@@ -2,7 +2,7 @@
 title: Functional Programming in Java
 date: 2018-09-01
 categories:
-- tutorial
+- tutorials
 tags: 
 - java
 - fp

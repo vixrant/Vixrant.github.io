@@ -2,7 +2,7 @@
 title: Internship Experience - Lido Learning
 date: 2019-08-25
 categories:
-- experience
+- experiences
 tags:
 - internship
 ---

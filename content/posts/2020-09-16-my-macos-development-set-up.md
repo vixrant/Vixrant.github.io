@@ -1,9 +1,8 @@
 ---
 title: My MacOS development set-up checklist
 date: 2020-09-16T18:30:00.000Z
-series: ""
 categories:
-  - tutorial
+  - tutorials
 tags:
   - mac
 ---

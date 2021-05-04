@@ -2,7 +2,7 @@
 title: Date and Time in Java
 date: 2018-09-01
 categories:
-- tutorial
+- tutorials
 tags:
 - java
 ---
