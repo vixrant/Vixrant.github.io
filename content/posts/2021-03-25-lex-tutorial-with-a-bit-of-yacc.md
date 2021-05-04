@@ -1,10 +1,13 @@
 ---
 title: Lex Tutorial, with a bit of Yacc
+draft: false
 date: 2021-03-25T07:21:06.088Z
 categories:
   - tutorials
 tags:
   - c
+  - c++
+  - compilers
 ---
 
 ![Holy bison](/uploads/the_gnu_logo.png)
