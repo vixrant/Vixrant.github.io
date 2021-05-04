@@ -1,11 +1,13 @@
 ---
 title: My MacOS development set-up checklist
+draft: false
 date: 2020-09-16T18:30:00.000Z
 series: ""
 categories:
   - tutorial
 tags:
   - mac
+category: notes
 ---
 
 ![Stock image of Macbook Air](/uploads/goran-ivos-t8lmin09-mo-unsplash.jpg)
