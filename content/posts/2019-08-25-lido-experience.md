@@ -1,10 +1,12 @@
 ---
 title: Internship Experience - Lido Learning
+draft: false
 date: 2019-08-25
 categories:
-- experience
+  - experience
 tags:
-- internship
+  - internship
+category: experiences
 ---
 
 ![Office desk with my resume on it](/uploads/lido-experience.jpeg)
