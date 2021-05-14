@@ -7448,7 +7448,7 @@ body.okayNav-loaded {
 
   /* Override */
   background-color: #0cbaba;
-  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  background-image: linear-gradient(315deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
 }
 
 .theme-green .header {
@@ -9107,7 +9107,7 @@ body.okayNav-loaded {
 
     /* Override */
     background-color: #0cbaba;
-    background-image: linear-gradient(255deg, #0cbaba 0%, #380036 74%);
+    background-image: linear-gradient(255deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
   }
 
   .theme-green #main-navbar {

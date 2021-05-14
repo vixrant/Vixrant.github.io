@@ -8,13 +8,13 @@ I'm Vikrant Gajria, software engineer with interest in programming languages and
 
 ## Education
 
-{{< logo src="/uploads/purdue.png" >}} Currently, I'm accepted as a **Master in Science** student by the Department of Computer Science at _Purdue University_ at West Lafayette. I plan on starting in Fall 2021 if the pandemic allows me to.
+{{< logo src="/uploads/purdue.png" >}} Currently, I'm accepted to the **Master of Science** in Computer Science program at _Purdue University_ at West Lafayette. I plan on starting in Fall 2021 if the pandemic allows me to.
 
-{{< logo src="/uploads/djsce.png" >}} I studied at **Bachelor in Engineering**, major in Computer Engineering, at the autonomous college _Dwarkadas J. Sanghvi College of Engineering (DJSCE)_ at the _University of Mumbai_ from Fall 2017 to Spring 2021, and graduated with a top-notch CGPA of 3.90 (scaled from 9.74 / 10.00).
+{{< logo src="/uploads/djsce.png" >}} I completed the **Bachelor in Engineering** program, major in Computer Engineering, at the autonomous college _Dwarkadas J. Sanghvi College of Engineering (DJSCE)_ of the _University of Mumbai_ from Fall 2017 to Spring 2021. I graduated with a top-notch CGPA of 3.90 (scaled from 9.74 / 10.00).
 
 ## Work Experience
 
-{{< logo src="/uploads/accelus.png" >}} As a senior at DJSCE, I'm currently working on PL projects as a compiler developer at _Accelus Robotics_. My job involves from developing virtual machines to translators for LinuxCNC.
+{{< logo src="/uploads/accelus.png" >}} As a senior at DJSCE, I started working on PL projects as a compiler developer at _Accelus Robotics_. My job involves from developing virtual machines to translators for LinuxCNC.
 
 {{< logo src="/uploads/lido.svg" >}} As a sophomore at DJSCE, I worked on multiple projects as a software development intern at _Lido Learning_. Apart from web development using NodeJS and React, my major contribution was in designing and deploying a message-oriented distributed architecture using AWS for serverless and microservices of the start-up.
 

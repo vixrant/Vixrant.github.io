@@ -1,5 +1,3 @@
-{{ if .IsNamedParams }}
-<img src="{{.Get "src" }}" alt="" width="32">
-{{ else }}
-<img src="{{.Get 0}}" alt="" width="32">
-{{ end }}
+<img src="{{ if .IsNamedParams }} {{ .Get "src" }} {{ else }} {{ .Get 0 }} {{ end }}"
+    alt=""
+    style="height: 2.5rem; width: 2.5rem; object-fit: contain;">
