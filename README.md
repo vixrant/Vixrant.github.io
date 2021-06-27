@@ -18,7 +18,7 @@ The website is currently built on Hugo using a forked version of Hugo UILite fre
 
 ### License
 
-Copyright (C) 2018, 2019, 2020 Vikrant Gajria
+Copyright (C) 2018, 2019, 2020, 2021 Vikrant Gajria
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
