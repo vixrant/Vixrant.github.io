@@ -5,6 +5,7 @@ date: 2021-07-02T12:19:38.209Z
 tags:
   - fp
   - interview
+  - haskell
 categories:
   - tutorial
 ---
@@ -13,6 +14,8 @@ categories:
 There's this quite popular interview with Steve Ballmer where he explains a "hard" question that he gives to students in interviews.
 
 {{< youtube svCYbkS0Sjk >}}
+
+Now I'm not a statistics guy, I like algorithms and simulations. So here's my solution to this problem. I'll also upload images on how to do it by hand.
 
 ## Reframing the Problem
 
@@ -107,7 +110,7 @@ expectedGain n maxGain = flip divF n $ sum $ gains n maxGain
 
 The `divF` function is floating point division for integers (haskell gimmick). The `expectedGain` function calculates mean of all payoffs, and then divides them by the range of numbers (100 in this case). This is mathematically equal to
 
-$$ E(X) = \sum_{i = 1}^n x_i * P(x_i) $
+$$ E(X) = \sum_{i = 1}^n x_i * P(x_i) $$
 
 Calculating the expected value we get:
 
