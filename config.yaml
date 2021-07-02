@@ -108,7 +108,7 @@ params:
   # profile
   profile:
     enabled: true # Whether to show profile bar
-    avatar: images/face.jpg
+    avatar: /images/face.jpg
     author: Vikrant Gajria
     author_title: Compiler Engineer
     author_description: MS in CS student at Purdue
