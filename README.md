@@ -1,14 +1,12 @@
 <br>
 <p>
-    <h1 align="center"><a href="https://www.vikrantgajria.me">
+    <h1 align="center"><a href="https://vixrant.github.io">
         ❦ My Blog
     </a></h1>
 </p>
 <br>
 <br>
 <br>
-
-[![Deploy Frontend to Netlify][Netlify-deploy-button]][Netlify-deploy-link]
 
 ### About
 
@@ -32,6 +30,3 @@ Copyright (C) 2018, 2019, 2020, 2021 Vikrant Gajria
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-[Netlify-deploy-link]: https://app.netlify.com/start/deploy?repository=https://github.com/vixrant/personal-website
-[Netlify-deploy-button]: https://www.netlify.com/img/deploy/button.svg
