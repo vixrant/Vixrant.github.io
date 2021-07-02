@@ -1,4 +1,4 @@
-baseURL: https://vixrant.github.io/
+# baseURL: https://vixrant.github.io/
 theme: pure
 title: Vikrant Gajria's Blog
 copyright: This work is licensed under a Creative Commons Attribution 4.0 International License.
@@ -8,6 +8,7 @@ paginate: 25
 enableEmoji: true
 PygmentsCodeFences: false
 googleAnalytics: UA-117154240-1
+relativeurls: true
 
 permalinks:
   posts: /:year/:month/:filename/
