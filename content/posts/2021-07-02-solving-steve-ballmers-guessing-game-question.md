@@ -16,37 +16,37 @@ There's this quite popular interview with Steve Ballmer where he explains a "har
 
 ## Reframing the Problem
 
-> There's a small change in this blog post, I believe the starting payoff should be $4 instead of $5 as per my simulation. Therefore, I will consider the starting profit as $4.
+> There's a small change in this blog post, I believe the starting payoff should be \$4 instead of $5 as per my simulation. Therefore, I will consider the starting profit as \$4.
 
 Let me reframe the question in a style of writing more familiar with competetive coders:
 
-You are given a range of number \`\[1, N]\` and a starting payoff of \`K\` dollars.
+You are given a range of number `[1, N]` and a starting payoff of `K` dollars.
 
-Ballmer will pick any number in this range only. You have to guess the number in his mind. For every number that you guess, Ballmer will tell you if the number is higher or lower than the number in his mind. If you guess the number in 1st guess, you get $\`K\`. If you guess the number in 2nd guess, you get $\`(K - 1)\`, and so on. The amount you win keeps decreasing with the number of guesses you make. After a certain number of guesses, you would owe Ballmer instead of gaining money from him.
+Ballmer will pick any number in this range only. You have to guess the number in his mind. For every number that you guess, Ballmer will tell you if the number is higher or lower than the number in his mind. If you guess the number in 1st guess, you get `$K`. If you guess the number in 2nd guess, you get `$(K - 1)`, and so on. The amount you win keeps decreasing with the number of guesses you make. After a certain number of guesses, you would owe Ballmer instead of gaining money from him.
 
-For example, if the range is \`\[1,100]\` and starting payoff is $4, the prize you'd win in the game will be as follows:
+For example, if the range is `[1,100]` and starting payoff is \$4, the prize you'd win in the game will be as follows:
 
-1 guess = $4
+1 guess = \$4
 
-2 guesses = $3
+2 guesses = \$3
 
-3 guesses = $2
+3 guesses = \$2
 
-4 guesses = $1
+4 guesses = \$1
 
-5 guesses = $0
+5 guesses = \$0
 
-6 guesses = -$1 (You owe Ballmer now)
+6 guesses = -\$1 (You owe Ballmer now)
 
-7 guesses = -$2
+7 guesses = -\$2
 
 And so on.
 
-Determine for given value of \`N\` and \`K\` whether you should play the game or not, depending on the mean value of payoff for all numbers. If mean value is greater than positive, then you should play the game.
+Determine for given value of `N` and `K` whether you should play the game or not, depending on the mean value of payoff for all numbers. If mean value is greater than positive, then you should play the game.
 
 # The Intuition
 
-Simply by listening to the words "guess", "high/ low", "1-100", we can infer that we can use **Binary Search** in the solution. The array is sorted in an increasing manner, and we are told whether our guess is either higher or lower than the number we need to find. Therefore, binary search will give us the answer in \`lg n + 1\` number of operations. You can try running binary search manually, for the number chosen as 2:
+Simply by listening to the words "guess", "high/ low", "1-100", we can infer that we can use **Binary Search** in the solution. The array is sorted in an increasing manner, and we are told whether our guess is either higher or lower than the number we need to find. Therefore, binary search will give us the answer in `lg n + 1` number of operations. You can try running binary search manually, for the number chosen as 2:
 
 *Guess 1:* Checking 1 - 100, we choose 50.5 (floor = 50).
 
