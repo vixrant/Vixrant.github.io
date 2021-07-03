@@ -79,7 +79,7 @@ This process continues till we can't split ranges anymore. For 100 numbers, we f
 
 If you haven't realised yet, we're going down a usual binary tree with nodes at each depth increasing 1 -> 2 -> 4 -> 8 -> 16 -> 32. This amounts to 63 nodes so far for guesses 1 to 6. What about the 7th guess? We can't have 64 nodes because that'll be more than 100 numbers then. Therefore, we only have 100 - 63 = 37 choices for the 7th guess.
 
-From this, we can state that we have $\frac{1}{100}$ chance of getting \$4, $\frac{2}{100}$ chance of getting \$3, $\frac{4}{100}$ chance of getting \$2, $\frac{8}{100}$ chance of getting \$1, $\frac{16}{100}$ chance of getting \$0, $\frac{32}{100}$ chance of paying \$1, and $\frac{37}{100}$ chance of paying \$2. Problem solved!
+From this, we can state that we have $\frac{1}{100}$ chance of getting \$4, $\frac{2}{100}$ chance of getting \$3, $\frac{4}{100}$ chance of getting \$2, $\frac{8}{100}$ chance of getting \$1, $\frac{16}{100}$ chance of getting $0, $\frac{32}{100}$ chance of paying \$1, and $\frac{37}{100}$ chance of paying \$2. Problem solved!
 
 # Solution by Program
 
