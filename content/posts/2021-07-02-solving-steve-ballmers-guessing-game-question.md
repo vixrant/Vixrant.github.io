@@ -19,7 +19,7 @@ Now I'm not a statistics guy, I like algorithms and simulations. So here's my so
 
 ## Reframing the Problem
 
-> There's a small change in this blog post, I believe the starting payoff should be \$4 instead of $5 as per my simulation. Therefore, I will consider the starting profit as \$4.
+> There's a small change in this blog post, I believe the starting payoff should be $4 instead of $5 as per my simulation. Therefore, I will consider the starting profit as $4.
 
 Let me reframe the question in a style of writing more familiar with competetive coders:
 
@@ -27,21 +27,21 @@ You are given a range of number `[1, N]` and a starting payoff of `K` dollars.
 
 Ballmer will pick any number in this range only. You have to guess the number in his mind. For every number that you guess, Ballmer will tell you if the number is higher or lower than the number in his mind. If you guess the number in 1st guess, you get `$K`. If you guess the number in 2nd guess, you get `$(K - 1)`, and so on. The amount you win keeps decreasing with the number of guesses you make. After a certain number of guesses, you would owe Ballmer instead of gaining money from him.
 
-For example, if the range is `[1,100]` and starting payoff is \$4, the prize you'd win in the game will be as follows:
+For example, if the range is `[1,100]` and starting payoff is $4, the prize you'd win in the game will be as follows:
 
-1 guess = \$4
+1 guess = $4
 
-2 guesses = \$3
+2 guesses = $3
 
-3 guesses = \$2
+3 guesses = $2
 
-4 guesses = \$1
+4 guesses = $1
 
-5 guesses = \$0
+5 guesses = $0
 
-6 guesses = -\$1 (You owe Ballmer now)
+6 guesses = -$1 (You owe Ballmer now)
 
-7 guesses = -\$2
+7 guesses = -$2
 
 And so on.
 
@@ -65,11 +65,25 @@ Simply by listening to the words "guess", "high/ low", "1-100", we can infer tha
 
 *Guess 7:* Checking 2 - 2, we choose 2.
 
-This was the worst case scenario where we make 7 guesses, therefore our payoff decreases to -\$2, meaning we owe Ballmer \$2. This, however, is still the most optimal method to guess numbers. We'll go with this algorithm for figuring out if we can expect profit or not.
+This was the worst case scenario where we make 7 guesses, therefore our payoff decreases to -$2, meaning we owe Ballmer $2. This, however, is still the most optimal method to guess numbers. We'll go with this algorithm for figuring out if we can expect profit or not.
 
-# Expected Value by Program
+# Solution by Hand
 
-In order to find the expected value of the game, we need to calculate how many operations (guesses) we need to make to reach all 1 - 100 numbers. You can do this manually by splitting the binary tree again and again. I wrote a haskell program to find the expected value as follows:
+In order to find the expected value of the game, we need to calculate how many operations (guesses) we need to make to reach all 1 - 100 numbers. You can do this manually by splitting the binary tree again and again. We'll have to do this in whiteboard-based interviews, but luckily the pattern is easy to recognise.
+
+Here's a recursive binary search. We start off with `low = 1` and `high = 100`. We calculate the `mid = floor( (low + high) / 2 )`. We split the range from `[low, high]` to `[low, mid - 1]` and `[mid + 1, high]`. 
+
+This process continues till we can't split ranges anymore. For 100 numbers, we find the following tree:
+
+![Excel sheet showing relation 1->2->4->8->16->32 then 100-63 = 37](/uploads/ballmermanual.png "Recursive Binary Search")
+
+If you haven't realised yet, we're going down a usual binary tree with nodes at each depth increasing 1 -> 2 -> 4 -> 8 -> 16 -> 32. This amounts to 63 nodes so far for guesses 1 to 6. What about the 7th guess? We can't have 64 nodes because that'll be more than 100 numbers then. Therefore, we only have 100 - 63 = 37 choices for the 7th guess.
+
+From this, we can state that we have $\frac{1}{100}$ chance of getting \$4, $\frac{2}{100}$ chance of getting \$3, $\frac{4}{100}$ chance of getting \$2, $\frac{8}{100}$ chance of getting \$1, $\frac{16}{100}$ chance of getting \$0, $\frac{32}{100}$ chance of paying \$1, and $\frac{37}{100}$ chance of paying \$2. Problem solved!
+
+# Solution by Program
+
+I wrote a haskell program to find the expected value as follows:
 
 ```haskell
 gains :: Int -> Int -> [Int]
@@ -98,7 +112,7 @@ Lets run this through run-length encoding and figure out the count of every payo
 [(-2,37),(-1,32),(0,16),(1,8),(2,4),(3,2),(4,1)]
 ```
 
-Interesting pattern here, 1 -> 2 -> 4 -> 8 -> 16 -> 32 and then since we can't get 64, we get 37. Clearly, there are 69 negative numbers, 16 times zero payoff, and 15 positive numbers. Just looking at this data alone, we can say that we are only 15% likely to gain something in the game!
+1 -> 2 -> 4 -> 8 -> 16 -> 32 and then since we can't get 64, we get 37.  Just like the manual method. Clearly, there are 69 negative numbers, 16 times zero payoff, and 15 positive numbers. Just looking at this data alone, we can say that we are only 15% likely to gain something in the game!
 
 ```haskell
 divF :: Int -> Int -> Float
