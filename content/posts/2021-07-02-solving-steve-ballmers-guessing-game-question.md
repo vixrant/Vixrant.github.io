@@ -45,7 +45,7 @@ For example, if the range is `[1,100]` and starting payoff is \$4, the prize you
 
 And so on.
 
-Determine for given value of `N` and `K` whether you should play the game or not, depending on the mean value of payoff for all numbers. If mean value is greater than positive, then you should play the game.
+Determine for given value of `N` and `K` whether you should play the game or not, depending on the mean value of payoff for all numbers. If mean value is positive, then you should play the game.
 
 # The Intuition
 
@@ -65,7 +65,7 @@ Simply by listening to the words "guess", "high/ low", "1-100", we can infer tha
 
 *Guess 7:* Checking 2 - 2, we choose 2.
 
-This was the worst case scenario where we make 7 guesses, therefore our payoff decreases to -$2, meaning we owe Ballmer $2. This, however, is still the most optimal method to guess numbers. We'll go with this algorithm for figuring out if we can expect profit or not.
+This was the worst case scenario where we make 7 guesses, therefore our payoff decreases to -\$2, meaning we owe Ballmer \$2. This, however, is still the most optimal method to guess numbers. We'll go with this algorithm for figuring out if we can expect profit or not.
 
 # Expected Value by Program
 
