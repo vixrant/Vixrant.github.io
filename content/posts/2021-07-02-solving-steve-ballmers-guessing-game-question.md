@@ -7,7 +7,7 @@ tags:
   - interview
   - haskell
 categories:
-  - tutorial
+  - tutorials
 ---
 # The Problem
 
