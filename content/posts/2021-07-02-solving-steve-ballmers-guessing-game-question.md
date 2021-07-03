@@ -65,7 +65,7 @@ Simply by listening to the words "guess", "high/ low", "1-100", we can infer tha
 
 *Guess 7:* Checking 2 - 2, we choose 2.
 
-This was the worst case scenario where we make 7 guesses, therefore our payoff decreases to -$2, meaning we owe Ballmer $2. This, however, is still the most optimal method to guess numbers. We'll go with this algorithm for figuring out if we can expect profit or not.
+This was the worst case scenario where we make 7 guesses, therefore our payoff decreases to -$ 2, meaning we owe Ballmer $ 2. This, however, is still the most optimal method to guess numbers. We'll go with this algorithm for figuring out if we can expect profit or not.
 
 # Solution by Hand
 
@@ -79,7 +79,7 @@ This process continues till we can't split ranges anymore. For 100 numbers, we f
 
 If you haven't realised yet, we're going down a usual binary tree with nodes at each depth increasing 1 -> 2 -> 4 -> 8 -> 16 -> 32. This amounts to 63 nodes so far for guesses 1 to 6. What about the 7th guess? We can't have 64 nodes because that'll be more than 100 numbers then. Therefore, we only have 100 - 63 = 37 choices for the 7th guess.
 
-From this, we can state that we have $\frac{1}{100}$ chance of getting \$4, $\frac{2}{100}$ chance of getting \$3, $\frac{4}{100}$ chance of getting \$2, $\frac{8}{100}$ chance of getting \$1, $\frac{16}{100}$ chance of getting $0, $\frac{32}{100}$ chance of paying \$1, and $\frac{37}{100}$ chance of paying \$2. Problem solved!
+From this, we can state that we have $\frac{1}{100}$ chance of getting $ 4, $\frac{2}{100}$ chance of getting $ 3, $\frac{4}{100}$ chance of getting $ 2, $\frac{8}{100}$ chance of getting $ 1, $\frac{16}{100}$ chance of getting $ 0, $\frac{32}{100}$ chance of paying \$1, and $\frac{37}{100}$ chance of paying $ 2. Problem solved!
 
 # Solution by Program
 
@@ -131,6 +131,13 @@ Calculating the expected value we get:
 ```haskell
 *Main Data.List> expectedGain 100 4
 -0.8
+```
+
+If you run this program on Ballmer's original starting payoff of $ 5 as per the interview, you get the wrong answer since you expect to gain more than to lose, which contradicts Ballmer's statement that "there are more negative numbers than positive numbers".
+
+```haskell
+*Main Data.List> expectedGain 100 5
+0.2
 ```
 
 # Conclusion
