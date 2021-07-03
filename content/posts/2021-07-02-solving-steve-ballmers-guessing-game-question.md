@@ -74,10 +74,10 @@ In order to find the expected value of the game, we need to calculate how many o
 ```haskell
 gains :: Int -> Int -> [Int]
 gains n maxGain = gains' 0 (n-1) maxGain
-    where gains' l h g
+    where helper l h g
             | l > h = []
-            | otherwise = gains' l (mid-1) (g-1) ++ [g] ++ gains' (mid+1) h (g-1)
-                            where mid = div (l+h) 2
+            | otherwise = helper l (m-1) (g-1) ++ [g] ++ helper (m+1) h (g-1)
+                            where m = div (l+h) 2
 ```
 
 The `gains` function accepts the range of numbers (100 in this case) and maximum payoff ($4). It uses a recursive divide-and-conquer algorithm to find number of operations for each number.
