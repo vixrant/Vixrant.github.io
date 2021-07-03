@@ -65,7 +65,7 @@ Simply by listening to the words "guess", "high/ low", "1-100", we can infer tha
 
 *Guess 7:* Checking 2 - 2, we choose 2.
 
-This was the worst case scenario where we make 7 guesses, therefore our payoff decreases to -$ 2, meaning we owe Ballmer $ 2. This, however, is still the most optimal method to guess numbers. We'll go with this algorithm for figuring out if we can expect profit or not.
+This was the worst case scenario where we make 7 guesses, therefore our payoff decreases to -\$2, meaning we owe Ballmer \$2. This, however, is still the most optimal method to guess numbers. We'll go with this algorithm for figuring out if we can expect profit or not.
 
 # Solution by Hand
 
