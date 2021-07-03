@@ -84,7 +84,7 @@ params:
   # Icon Reference: http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html
   enableMathJax: true #Enable mathjax support, to use mathematical notations
   highlightjs:
-    langs: ["python", "javascript"] # refer to http://staticfile.org/, search highlight.js, already have highlight.min.js
+    langs: ["python", "javascript", "haskell", "java"] # refer to http://staticfile.org/, search highlight.js, already have highlight.min.js
   tag_cloud:
     min: 8
     max: 20
